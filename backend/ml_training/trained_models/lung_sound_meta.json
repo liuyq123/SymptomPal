@@ -1,0 +1,17 @@
+{
+  "task_name": "lung_sound",
+  "best_model": "SGD (log_loss)",
+  "accuracy": 0.771,
+  "f1_score": 0.733,
+  "ensemble_accuracy": 0.772,
+  "ensemble_f1": 0.758,
+  "classes": ["both", "crackle", "normal", "rhonchi", "stridor", "wheeze"],
+  "model_scores": {
+    "LinearSVC": {"accuracy": 0.767, "f1_score": 0.718, "cv_mean": 0.0},
+    "Logistic Regression": {"accuracy": 0.685, "f1_score": 0.719, "cv_mean": 0.0},
+    "Gradient Boosting": {"accuracy": 0.757, "f1_score": 0.712, "cv_mean": 0.0},
+    "Random Forest": {"accuracy": 0.748, "f1_score": 0.664, "cv_mean": 0.0},
+    "MLP": {"accuracy": 0.769, "f1_score": 0.720, "cv_mean": 0.0},
+    "SGD (log_loss)": {"accuracy": 0.771, "f1_score": 0.733, "cv_mean": 0.0}
+  }
+}

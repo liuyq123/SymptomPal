@@ -1,0 +1,44 @@
+{
+  "task_name": "cough_type_binary",
+  "best_model": "Gradient Boosting",
+  "accuracy": 0.8842105263157894,
+  "f1_score": 0.8673102875532026,
+  "ensemble_accuracy": 0.8947368421052632,
+  "ensemble_f1": 0.8685570515435876,
+  "classes": [
+    "dry",
+    "wet"
+  ],
+  "model_scores": {
+    "SVM (linear)": {
+      "accuracy": 0.8105263157894737,
+      "f1_score": 0.8199700199866756,
+      "cv_mean": 0.7843001119820829
+    },
+    "SVM (rbf)": {
+      "accuracy": 0.6526315789473685,
+      "f1_score": 0.6925485263330203,
+      "cv_mean": 0.6977827547592386
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7894736842105263,
+      "f1_score": 0.799966688874084,
+      "cv_mean": 0.7906382978723405
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8842105263157894,
+      "f1_score": 0.8673102875532026,
+      "cv_mean": 0.8415005599104145
+    },
+    "Random Forest": {
+      "accuracy": 0.8526315789473684,
+      "f1_score": 0.7848086124401913,
+      "cv_mean": 0.8562374020156776
+    },
+    "MLP": {
+      "accuracy": 0.8,
+      "f1_score": 0.7812548815412653,
+      "cv_mean": 0.8329003359462487
+    }
+  }
+}

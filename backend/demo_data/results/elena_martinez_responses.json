@@ -1,0 +1,1780 @@
+{
+  "patient": "elena_martinez",
+  "profile": {
+    "user_id": "elena_martinez",
+    "name": "Elena Martinez",
+    "age": 62,
+    "gender": "female",
+    "conditions": [
+      "Hypertension",
+      "Type 2 Diabetes"
+    ],
+    "allergies": [
+      "Sulfa drugs (bad reaction)"
+    ],
+    "regular_medications": [
+      "Glipizide 5 milligrams in the morning",
+      "Lisinopril 10 milligrams",
+      "Metformin 500 milligrams twice a day with meals"
+    ],
+    "surgeries": [],
+    "family_history": [
+      "Father had Myocardial Infarction at age 65",
+      "Mother had Diabetes Mellitus"
+    ],
+    "social_history": [
+      "Does not drink alcohol",
+      "Does not smoke tobacco",
+      "Retired teacher",
+      "Walks in the mornings (when knees allow)"
+    ],
+    "patterns": [
+      "Checks fasting blood sugar most mornings.",
+      "Dizziness upon standing (orthostatic hypotension) in the morning.",
+      "Glipizide is a new medication, recently added by doctor.",
+      "Hypoglycemia episodes (sugar crash to 55) potentially related to Glipizide, causing shaking, sweating, inability to think straight.",
+      "Nausea triggered by Metformin and Glipizide, often occurring after breakfast.",
+      "Takes medications with breakfast and dinner."
+    ],
+    "health_summary": "Patient experiences nausea after taking Metformin and Glipizide, particularly with breakfast. They also report morning dizziness upon standing and have had a recent episode of severe hypoglycemia (sugar crash) potentially linked to Glipizide.",
+    "intake_completed": true
+  },
+  "simulation_timestamp": "2026-02-21T01:28:33.841318",
+  "base_date": "2026-01-22",
+  "intake_responses": [
+    {
+      "question_id": "name",
+      "agent_question": "Hi! I'm your health tracking assistant. What's your name?",
+      "patient_answer": "Elena Martinez",
+      "parsed_items": []
+    },
+    {
+      "question_id": "age_sex",
+      "agent_question": "Nice to meet you! To help personalize your health tracking, how old are you and what's your biological sex?",
+      "patient_answer": "62, female",
+      "parsed_items": []
+    },
+    {
+      "question_id": "conditions",
+      "agent_question": "To personalize tracking, do you have any chronic conditions?",
+      "patient_answer": "I have type 2 diabetes and hypertension.",
+      "parsed_items": [
+        "Type 2 Diabetes",
+        "Hypertension"
+      ]
+    },
+    {
+      "question_id": "allergies",
+      "agent_question": "Okay, thank you. Now, regarding allergies, do you have any allergies to medications or foods?",
+      "patient_answer": "Sulfa drugs \u2014 I had a bad reaction once.",
+      "parsed_items": [
+        "Sulfa drugs (bad reaction)"
+      ]
+    },
+    {
+      "question_id": "regular_medications",
+      "agent_question": "Okay, thank you for letting me know about the sulfa drug allergy. Now, could you tell me about any regular medications or supplements you are currently taking?",
+      "patient_answer": "Metformin 500 milligrams twice a day with meals, glipizide 5 milligrams in the morning \u2014 that one's new \u2014 and lisinopril 10 milligrams.",
+      "parsed_items": [
+        "Glipizide 5 milligrams in the morning",
+        "Metformin 500 milligrams twice a day with meals",
+        "Lisinopril 10 milligrams"
+      ]
+    },
+    {
+      "question_id": "surgeries",
+      "agent_question": "Thank you. Now, could you tell me about any major surgeries or procedures you've had?",
+      "patient_answer": "No, nothing major.",
+      "parsed_items": []
+    },
+    {
+      "question_id": "family_history",
+      "agent_question": "Okay, thank you. Now, could you tell me about any significant health conditions that run in your family?",
+      "patient_answer": "My mother had diabetes too, and my father had a heart attack at 65.",
+      "parsed_items": [
+        "Father had Myocardial Infarction at age 65",
+        "Mother had Diabetes Mellitus"
+      ]
+    },
+    {
+      "question_id": "social_history",
+      "agent_question": "Thanks for sharing that family history. Now, shifting gears a bit, could you tell me about your lifestyle habits, such as smoking or alcohol use?",
+      "patient_answer": "I don't drink or smoke. I try to walk in the mornings when my knees cooperate. Retired teacher.",
+      "parsed_items": [
+        "Does not smoke tobacco",
+        "Does not drink alcohol",
+        "Retired teacher",
+        "Walks in the mornings (when knees allow)"
+      ]
+    },
+    {
+      "question_id": "patterns",
+      "agent_question": "You mentioned walking in the mornings when your knees cooperate. Are there any specific times of day or activities that tend to make your symptoms, like knee pain or perhaps diabetes-related issues, better or worse?",
+      "patient_answer": "I take my medications with breakfast and dinner. I check my fasting blood sugar most mornings. The glipizide is new, my doctor just added it.",
+      "parsed_items": [
+        "Checks fasting blood sugar most mornings.",
+        "Takes medications with breakfast and dinner.",
+        "Glipizide is a new medication, recently added by doctor."
+      ]
+    },
+    {
+      "question_id": "health_summary",
+      "agent_question": "You mentioned checking your blood sugar in the morning. Besides that, are there any other routine health checks or screenings you regularly do?",
+      "patient_answer": "I'm 62, retired teacher. Had the diabetes about 15 years now. The blood pressure maybe 8 years. I try to be a good patient but the side effects from the new pill are getting to me.",
+      "parsed_items": [
+        "Age 62 Retired teacher Type 2 Diabetes for about 15 years Hypertension for about 8 years Takes Glipizide (new medication) Experiencing side effects from new pill"
+      ]
+    }
+  ],
+  "log_responses": [
+    {
+      "day": 1,
+      "week": 1,
+      "phase": "Getting started \u2014 the compliant patient",
+      "transcript": "Hi, just took my morning pills. Metformin and that new one, glipizide. Blood sugar was 145 before breakfast.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Hi, just took my morning pills. Metformin and that new one, glipizide. Blood sugar was 145 before breakfast.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "metformin",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "glipizide",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "145",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Good morning, Elena. Thanks for logging your medications and blood sugar this morning.",
+          "immediate_question": "Could you please confirm the dose of Glipizide you took this morning?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "The log mentions taking Glipizide but does not specify the dosage. The user profile indicates a regular dose of 5 milligrams, but it's important to confirm the actual dose taken.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_42e085ac58a2"
+      },
+      "followup_answer": "500 milligrams, same as always. My sugar's usually around 140 to 155 most mornings \u2014 I've been checking almost every day since they added the glipizide.",
+      "followup_response": "Thanks for confirming the dose of Glipizide is 500 milligrams. I see your blood sugar was 145 this morning, which is a bit higher than your usual range of 140 to 155 since starting the new medication. It's good you are monitoring closely.",
+      "followup_exchanges": [
+        {
+          "question": "Could you please confirm the dose of Glipizide you took this morning?",
+          "answer": "500 milligrams, same as always. My sugar's usually around 140 to 155 most mornings \u2014 I've been checking almost every day since they added the glipizide.",
+          "agent_response": "Thanks for confirming the dose of Glipizide is 500 milligrams. I see your blood sugar was 145 this morning, which is a bit higher than your usual range of 140 to 155 since starting the new medication. It's good you are monitoring closely.",
+          "answered_at": "2026-02-21T06:20:12.464723Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 2,
+      "week": 1,
+      "phase": null,
+      "transcript": "Metformin 500, glipizide 5mg. Felt kinda queasy after though. Is that normal? Blood sugar 155.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Metformin 500, glipizide 5mg. Felt kinda queasy after though. Is that normal? Blood sugar 155.",
+          "symptoms": [
+            {
+              "symptom": "queasy",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "after",
+              "duration_text": null,
+              "triggers": [
+                "medication"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "Metformin",
+              "dose_text": "500mg",
+              "effect_text": null
+            },
+            {
+              "name": "glipizide",
+              "dose_text": "5mg",
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "155",
+              "unit": null
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "That's a good question, Elena. Feeling queasy can sometimes be a side effect when starting new medications like glipizide, or even with metformin for some people. It's worth discussing with your doctor to see if it persists or if there are ways to manage it.",
+          "immediate_question": "On a scale of 1 to 10, with 1 being barely noticeable and 10 being the worst nausea you can imagine, how would you rate that queasiness?",
+          "scheduled_checkin": null,
+          "protocol_id": "generic_severity_fallback",
+          "reason_code": "generic_missing_severity_high_priority",
+          "safety_mode": "llm_user_question_priority",
+          "tool_calls": [
+            "invoke_protocol:generic_severity_fallback"
+          ],
+          "question_rationale": "High-priority symptom (nausea) reported without severity. Need numeric value for assessment.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 generic_severity_fallback"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_83c61396afe2"
+      },
+      "followup_answer": "Maybe a 2 or 3. Not terrible, just uncomfortable. Like a queasy feeling in my stomach.",
+      "followup_response": "Thanks for clarifying the level of queasiness, Elena. A 2 or 3 is definitely manageable but still uncomfortable, and it's good to be aware of potential side effects from new medications like glipizide. I will note this discomfort in your record.",
+      "followup_exchanges": [
+        {
+          "question": "On a scale of 1 to 10, with 1 being barely noticeable and 10 being the worst nausea you can imagine, how would you rate that queasiness?",
+          "answer": "Maybe a 2 or 3. Not terrible, just uncomfortable. Like a queasy feeling in my stomach.",
+          "agent_response": "Thanks for clarifying the level of queasiness, Elena. A 2 or 3 is definitely manageable but still uncomfortable, and it's good to be aware of potential side effects from new medications like glipizide. I will note this discomfort in your record.",
+          "answered_at": "2026-02-21T06:20:33.519449Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 3,
+      "week": 1,
+      "phase": null,
+      "transcript": "Took my metformin and glipizide, and my blood pressure pill too. Sugar was 140. The nausea was maybe a 3, not terrible.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Took my metformin and glipizide, and my blood pressure pill too. Sugar was 140. The nausea was maybe a 3, not terrible.",
+          "symptoms": [
+            {
+              "symptom": "nausea",
+              "location": null,
+              "character": null,
+              "severity_1_10": 3,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "metformin",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "glipizide",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "blood pressure pill",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "140",
+              "unit": null
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for logging your symptoms, Elena. I see you took your medications and checked your blood sugar.",
+          "immediate_question": "What dose of blood pressure pill did you take?",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_missing_dose_priority",
+          "reason_code": "medication_missing_dose",
+          "safety_mode": "llm_protocol",
+          "tool_calls": [
+            "invoke_protocol:medication_missing_dose_priority"
+          ],
+          "question_rationale": "The patient is experiencing nausea after taking glipizide. The standard dose was not specified in the log and needs to be confirmed for context.",
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "invoke_protocol:medication_missing_dose_priority"
+            ],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_67406e0c3f68"
+      },
+      "followup_answer": "Just a couple weeks \u2014 my doctor added it at my last visit. I'm on metformin 500, glipizide 5mg, and lisinopril 10mg. I take them all with breakfast.",
+      "followup_response": "Thank you for clarifying the medications and dosages, Elena. I see you are taking Metformin 500mg, Glipizide 5mg, and Lisinopril 10mg each morning with breakfast. Your blood sugar was 140 this morning, which is elevated given your diabetes diagnosis; it would be good to discuss this reading with your doctor.",
+      "followup_exchanges": [
+        {
+          "question": "What dose of blood pressure pill did you take?",
+          "answer": "Just a couple weeks \u2014 my doctor added it at my last visit. I'm on metformin 500, glipizide 5mg, and lisinopril 10mg. I take them all with breakfast.",
+          "agent_response": "Thank you for clarifying the medications and dosages, Elena. I see you are taking Metformin 500mg, Glipizide 5mg, and Lisinopril 10mg each morning with breakfast. Your blood sugar was 140 this morning, which is elevated given your diabetes diagnosis; it would be good to discuss this reading with your doctor.",
+          "answered_at": "2026-02-21T06:20:57.866404Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 5,
+      "week": 1,
+      "phase": null,
+      "transcript": "Everything on time today. Sugar was 140 fasting. No complaints for once!",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Everything on time today. Sugar was 140 fasting. No complaints for once!",
+          "symptoms": [],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "140",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Things are stable. Your fasting blood sugar has been consistently in the 140-155 mg/dL range over the past few days.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_5458733d8a31"
+      },
+      "followup_answer": "Honestly the nausea seems to come right after I take the metformin. The headache was just a one-time thing I think.",
+      "followup_response": "Thanks for sharing that, Elena. It's helpful to know the nausea seems linked to the metformin timing and that the headache might have been a one-off event. I'll make sure this information is noted in your record.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Honestly the nausea seems to come right after I take the metformin. The headache was just a one-time thing I think.",
+          "agent_response": "Thanks for sharing that, Elena. It's helpful to know the nausea seems linked to the metformin timing and that the headache might have been a one-off event. I'll make sure this information is noted in your record.",
+          "answered_at": "2026-02-21T06:21:16.832350Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 7,
+      "week": 1,
+      "phase": null,
+      "transcript": "Had a bad headache after lunch so I took some ibuprofen. Sugar was 148 this morning.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Had a bad headache after lunch so I took some ibuprofen. Sugar was 148 this morning.",
+          "symptoms": [
+            {
+              "symptom": "headache",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "after lunch",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "ibuprofen",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "148",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for logging that, Elena. Headaches can be really disruptive.",
+          "immediate_question": "NSAIDs like ibuprofen can reduce the effectiveness of blood pressure medications and may affect kidney function. Worth discussing with your clinician, especially if you're taking them regularly.",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_interaction",
+          "reason_code": "nsaid_ace_inhibitor_interaction",
+          "safety_mode": "safety_override",
+          "tool_calls": [
+            "invoke_protocol:medication_interaction"
+          ],
+          "question_rationale": "Safety override: medication_interaction \u2014 nsaid_ace_inhibitor_interaction",
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "invoke_protocol:generic_severity_fallback"
+            ],
+            "deterministic_actions": [
+              "safety override: protocol generic_severity_fallback \u2192 medication_interaction"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "NSAIDs can reduce the effectiveness of blood pressure medications and affect kidney function. Consider discussing this with your clinician.",
+        "contact_clinician_reason": "nsaid_ace_inhibitor_interaction",
+        "image_analysis": null,
+        "log_id": "log_bdb6ce39804e"
+      },
+      "followup_answer": "Maybe a 5? It was a dull throbbing behind my eyes. I took 200mg of ibuprofen and it helped a little.",
+      "followup_response": "Thanks for sharing that, Elena. A dull throbbing headache can be really disruptive, and it's good to hear the ibuprofen helped even a little bit. I noted the pain level was maybe a 5 out of 10.",
+      "followup_exchanges": [
+        {
+          "question": "NSAIDs like ibuprofen can reduce the effectiveness of blood pressure medications and may affect kidney function. Worth discussing with your clinician, especially if you're taking them regularly.",
+          "answer": "Maybe a 5? It was a dull throbbing behind my eyes. I took 200mg of ibuprofen and it helped a little.",
+          "agent_response": "Thanks for sharing that, Elena. A dull throbbing headache can be really disruptive, and it's good to hear the ibuprofen helped even a little bit. I noted the pain level was maybe a 5 out of 10.",
+          "answered_at": "2026-02-21T06:21:40.952318Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 8,
+      "week": 2,
+      "phase": "The nausea pattern \u2014 frustration builds",
+      "transcript": "Ugh, nauseous again right after breakfast. I'm starting to dread taking these pills. Took my metformin 500 and glipizide.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Ugh, nauseous again right after breakfast. I'm starting to dread taking these pills. Took my metformin 500 and glipizide.",
+          "symptoms": [
+            {
+              "symptom": "nauseous",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "right after breakfast",
+              "duration_text": null,
+              "triggers": [
+                "breakfast"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "metformin",
+              "dose_text": "500mg",
+              "effect_text": null
+            },
+            {
+              "name": "glipizide",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "I'm sorry to hear you're feeling nauseous again after breakfast, Elena. It sounds frustrating when medication starts causing side effects.",
+          "immediate_question": "On a scale of 1-10, how bad is the nauseous?",
+          "scheduled_checkin": null,
+          "protocol_id": "generic_severity_fallback",
+          "reason_code": "generic_missing_severity_high_priority",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:generic_severity_fallback"
+          ],
+          "question_rationale": "Protocol: generic_severity_fallback \u2014 generic_missing_severity_high_priority",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 generic_severity_fallback"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_684167ac2f25"
+      },
+      "followup_answer": "5 milligrams, the usual. But the nausea was like a 5 today \u2014 worse than usual. Had to sit down for 20 minutes after breakfast.",
+      "followup_response": "Thanks for letting me know the nausea was a 5 today, worse than usual and requiring you to sit down. That must be really unpleasant, especially right after breakfast when you're taking your medication. I'll be sure to track this change in nausea level.",
+      "followup_exchanges": [
+        {
+          "question": "On a scale of 1-10, how bad is the nauseous?",
+          "answer": "5 milligrams, the usual. But the nausea was like a 5 today \u2014 worse than usual. Had to sit down for 20 minutes after breakfast.",
+          "agent_response": "Thanks for letting me know the nausea was a 5 today, worse than usual and requiring you to sit down. That must be really unpleasant, especially right after breakfast when you're taking your medication. I'll be sure to track this change in nausea level.",
+          "answered_at": "2026-02-21T06:22:01.091431Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 10,
+      "week": 2,
+      "phase": null,
+      "transcript": "I'm so tired of feeling sick every morning. It's definitely the metformin. Maybe a 4 out of 10 but it ruins my whole morning. Sugar was 142.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "I'm so tired of feeling sick every morning. It's definitely the metformin. Maybe a 4 out of 10 but it ruins my whole morning. Sugar was 142.",
+          "symptoms": [
+            {
+              "symptom": "feeling sick",
+              "location": null,
+              "character": null,
+              "severity_1_10": 4,
+              "onset_time_text": "every morning",
+              "duration_text": null,
+              "triggers": [
+                "metformin"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "tiredness",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "every morning",
+              "duration_text": null,
+              "triggers": [
+                "metformin"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "metformin",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "142",
+              "unit": null
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "I hear you, Elena. It sounds really frustrating to feel sick every morning, especially when it's impacting your day like that.",
+          "immediate_question": "You mentioned the metformin might be a 4 out of 10. Is there anything specific about the feeling sick or tiredness that you can describe?",
+          "scheduled_checkin": null,
+          "protocol_id": "generic_severity_fallback",
+          "reason_code": "metformin_side_effects",
+          "safety_mode": "llm_protocol",
+          "tool_calls": [
+            "invoke_protocol:generic_severity_fallback"
+          ],
+          "question_rationale": "The patient reported 'feeling sick' and 'tiredness' without specifying which symptom is rated 4/10, nor providing more detail about the nature of these symptoms. Further clarification is needed.",
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "invoke_protocol:generic_severity_fallback"
+            ],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_83baa96da655"
+      },
+      "followup_answer": "500mg, same as always. I usually just have toast and coffee, then take the pills right after. Maybe I should eat more first?",
+      "followup_response": "Thanks for clarifying about the metformin dose and timing relative to your breakfast. It might be worth experimenting with eating something more substantial before taking it, as sometimes food can help buffer stomach upset. I'll note that you're considering this change in case the feeling persists.",
+      "followup_exchanges": [
+        {
+          "question": "You mentioned the metformin might be a 4 out of 10. Is there anything specific about the feeling sick or tiredness that you can describe?",
+          "answer": "500mg, same as always. I usually just have toast and coffee, then take the pills right after. Maybe I should eat more first?",
+          "agent_response": "Thanks for clarifying about the metformin dose and timing relative to your breakfast. It might be worth experimenting with eating something more substantial before taking it, as sometimes food can help buffer stomach upset. I'll note that you're considering this change in case the feeling persists.",
+          "answered_at": "2026-02-21T06:22:24.937562Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 12,
+      "week": 2,
+      "phase": null,
+      "transcript": "Tried eating a bigger breakfast before my pills like I was thinking about. Actually felt a little better today! Sugar 138.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Tried eating a bigger breakfast before my pills like I was thinking about. Actually felt a little better today! Sugar 138.",
+          "symptoms": [],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "138",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "That's good to hear that eating a bigger breakfast before your pills seemed to help you feel better today, Elena! It sounds like you might be figuring out what works best for managing your blood sugar and how you feel.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_ba0ae436c5e9"
+      },
+      "followup_answer": "Maybe a 7? I'd say noticeably better. I had eggs and toast before taking my pills instead of just coffee. The metformin is still 500mg and glipizide 5mg, same as always.",
+      "followup_response": "That's good to hear you felt noticeably better today, Elena. It seems adjusting your breakfast might be making a difference in how you feel and potentially impacting your blood sugar reading of 138. I appreciate you sharing this change.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Maybe a 7? I'd say noticeably better. I had eggs and toast before taking my pills instead of just coffee. The metformin is still 500mg and glipizide 5mg, same as always.",
+          "agent_response": "That's good to hear you felt noticeably better today, Elena. It seems adjusting your breakfast might be making a difference in how you feel and potentially impacting your blood sugar reading of 138. I appreciate you sharing this change.",
+          "answered_at": "2026-02-21T06:22:44.572771Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 14,
+      "week": 2,
+      "phase": null,
+      "transcript": "Ate before my meds but still nauseous, about a 5. And my sugar after dinner was 195 \u2014 that seems high. I had pasta, is that why?",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Ate before my meds but still nauseous, about a 5. And my sugar after dinner was 195 \u2014 that seems high. I had pasta, is that why?",
+          "symptoms": [
+            {
+              "symptom": "nausea",
+              "location": null,
+              "character": null,
+              "severity_1_10": 5,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "195",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Elena, it's understandable to wonder about the connection between your meal and your blood sugar/nausea. Pasta can sometimes raise blood sugar levels, especially if it's a large portion or made with refined flour. Also, nausea is a known potential side effect of Glipizide, which you recently started.",
+          "immediate_question": "Can you tell me what time you took your medications and when you checked your blood sugar after eating the pasta?",
+          "scheduled_checkin": null,
+          "protocol_id": "generic_severity_fallback",
+          "reason_code": "nausea_without_severity",
+          "safety_mode": "llm_protocol",
+          "tool_calls": [
+            "invoke_protocol:generic_severity_fallback"
+          ],
+          "question_rationale": "Need timing information to assess potential relationship between medication, meal, and blood sugar reading.",
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "invoke_protocol:generic_severity_fallback"
+            ],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_40e52e35d0c3"
+      },
+      "followup_answer": "That makes sense about the pasta. I'll try to watch the carbs more. The nausea is still frustrating though \u2014 even eating first doesn't always help.",
+      "followup_response": "Thanks for sharing that, Elena. It's understandable to be frustrated when nausea persists despite trying different strategies. I also noted your blood sugar was 195 after dinner; that is elevated, especially given your history of Type 2 Diabetes, so it might be worth discussing with your doctor.",
+      "followup_exchanges": [
+        {
+          "question": "Can you tell me what time you took your medications and when you checked your blood sugar after eating the pasta?",
+          "answer": "That makes sense about the pasta. I'll try to watch the carbs more. The nausea is still frustrating though \u2014 even eating first doesn't always help.",
+          "agent_response": "Thanks for sharing that, Elena. It's understandable to be frustrated when nausea persists despite trying different strategies. I also noted your blood sugar was 195 after dinner; that is elevated, especially given your history of Type 2 Diabetes, so it might be worth discussing with your doctor.",
+          "answered_at": "2026-02-21T06:23:04.206302Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 15,
+      "week": 3,
+      "phase": "Things go wrong \u2014 missed dose + hypoglycemia crisis",
+      "transcript": "Got really dizzy when I stood up this morning. Had to grab the counter. Scared me a little.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Got really dizzy when I stood up this morning. Had to grab the counter. Scared me a little.",
+          "symptoms": [
+            {
+              "symptom": "dizziness",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "this morning",
+              "duration_text": null,
+              "triggers": [
+                "standing up"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "That must be really frightening, Elena. Dizziness when standing up can be quite scary.",
+          "immediate_question": "On a scale of 1-10, how bad is the dizziness?",
+          "scheduled_checkin": null,
+          "protocol_id": "generic_severity_fallback",
+          "reason_code": "generic_missing_severity_high_priority",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:generic_severity_fallback"
+          ],
+          "question_rationale": "Protocol: generic_severity_fallback \u2014 generic_missing_severity_high_priority",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 generic_severity_fallback"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_0d838cd08184"
+      },
+      "followup_answer": "Maybe a 7. It was really scary \u2014 the room was spinning when I stood up. I had to hold onto the counter for like a minute before it passed.",
+      "followup_response": "That's a significant level of dizziness, and it sounds quite frightening when the room starts spinning like that. I understand why holding onto the counter was necessary until it passed. Given this is happening in the morning upon standing, we should definitely discuss this with your doctor as it could indicate orthostatic hypotension or another issue.",
+      "followup_exchanges": [
+        {
+          "question": "On a scale of 1-10, how bad is the dizziness?",
+          "answer": "Maybe a 7. It was really scary \u2014 the room was spinning when I stood up. I had to hold onto the counter for like a minute before it passed.",
+          "agent_response": "That's a significant level of dizziness, and it sounds quite frightening when the room starts spinning like that. I understand why holding onto the counter was necessary until it passed. Given this is happening in the morning upon standing, we should definitely discuss this with your doctor as it could indicate orthostatic hypotension or another issue.",
+          "answered_at": "2026-02-21T06:23:25.229701Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 16,
+      "week": 3,
+      "phase": null,
+      "transcript": "I was so nauseous last night I skipped my evening metformin. Woke up to a sugar of 230. Still dizzy and now my ankles are puffy. I'd say the dizziness is a 6.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "I was so nauseous last night I skipped my evening metformin. Woke up to a sugar of 230. Still dizzy and now my ankles are puffy. I'd say the dizziness is a 6.",
+          "symptoms": [
+            {
+              "symptom": "nausea",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "last night",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "dizziness",
+              "location": null,
+              "character": null,
+              "severity_1_10": 6,
+              "onset_time_text": "woke up",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "puffy ankles",
+              "location": "ankles",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "woke up",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "metformin",
+              "dose_text": null,
+              "effect_text": "skipped"
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "230",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Elena, I'm sorry to hear you're still feeling nauseous and dizzy, your blood sugar is high despite skipping a dose of metformin, and that your ankles are puffy. I have scheduled a follow-up check for now.",
+          "immediate_question": null,
+          "scheduled_checkin": {
+            "id": "checkin_f232e14513e3",
+            "user_id": "elena_martinez",
+            "checkin_type": "symptom_progression",
+            "scheduled_for": "2026-02-21T10:23:52.032338",
+            "message": "You reported several symptoms along with some concerning findings. How are you feeling now? If symptoms worsen or you feel unwell, please contact a clinician promptly.",
+            "context": {
+              "hours": 4,
+              "transcript": "I was so nauseous last night I skipped my evening metformin. Woke up to a sugar of 230. Still dizzy and now my ankles are puffy. I'd say the dizziness is a 6.",
+              "protocol_id": "compound_symptom_escalation",
+              "reason_code": "compound_escalation_abnormal_vitals_medication_nonadherence",
+              "medication_name": "metformin"
+            },
+            "created_at": "2026-02-21T06:23:52.032342",
+            "triggered": false,
+            "dismissed": false,
+            "response": null,
+            "responded_at": null
+          },
+          "protocol_id": "compound_symptom_escalation",
+          "reason_code": "compound_escalation_abnormal_vitals_medication_nonadherence",
+          "safety_mode": "safety_override",
+          "tool_calls": [
+            "invoke_protocol:compound_symptom_escalation",
+            "run_watchdog_now"
+          ],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "invoke_protocol:gastrointestinal_protocol",
+              "run_watchdog_now"
+            ],
+            "deterministic_actions": [
+              "safety override: protocol gastrointestinal_protocol \u2192 compound_symptom_escalation"
+            ],
+            "tool_results": {
+              "run_watchdog_now": "scheduled (force=True)"
+            },
+            "replan": {
+              "original_acknowledgment": "Elena, I'm sorry to hear you're still feeling nauseous and dizzy, and that your blood sugar is high despite skipping a dose of metformin. Things are getting worse.",
+              "revised_acknowledgment": "Elena, I'm sorry to hear you're still feeling nauseous and dizzy, your blood sugar is high despite skipping a dose of metformin, and that your ankles are puffy. I have scheduled a follow-up check for now.",
+              "revision_reason": "Acknowledged the patient's symptoms and incorporated the action taken by the tool (scheduling a follow-up). Maintained a matter-of-fact tone.",
+              "tool_results_seen": {
+                "run_watchdog_now": "scheduled (force=True)"
+              }
+            }
+          }
+        },
+        "contact_clinician_note": "You're reporting multiple symptoms, abnormal vital signs, and possible missed medications. Consider contacting a clinician promptly.",
+        "contact_clinician_reason": "compound_escalation_abnormal_vitals_medication_nonadherence",
+        "image_analysis": null,
+        "log_id": "log_9f0d9f1c856a"
+      },
+      "followup_answer": "I didn't take it \u2014 I skipped the 500mg evening dose because the nausea was so bad I thought I'd throw up.",
+      "followup_response": "Thanks for clarifying that you skipped your evening metformin dose due to nausea. I understand how difficult it can be when medication side effects interfere with taking necessary prescriptions, especially when you're already feeling unwell. It's good to note this change in routine and how it correlates with the elevated blood sugar reading of 230 this morning.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "I didn't take it \u2014 I skipped the 500mg evening dose because the nausea was so bad I thought I'd throw up.",
+          "agent_response": "Thanks for clarifying that you skipped your evening metformin dose due to nausea. I understand how difficult it can be when medication side effects interfere with taking necessary prescriptions, especially when you're already feeling unwell. It's good to note this change in routine and how it correlates with the elevated blood sugar reading of 230 this morning.",
+          "answered_at": "2026-02-21T06:24:06.699659Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 17,
+      "week": 3,
+      "phase": null,
+      "transcript": "Something scary happened. My sugar crashed to 55 this morning \u2014 I was shaking, sweating, couldn't think straight. I almost passed out. My daughter made me drink juice and it came back up to 90. I think the glipizide did this because I barely ate yesterday from the nausea.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Something scary happened. My sugar crashed to 55 this morning \u2014 I was shaking, sweating, couldn't think straight. I almost passed out. My daughter made me drink juice and it came back up to 90. I think the glipizide did this because I barely ate yesterday from the nausea.",
+          "symptoms": [
+            {
+              "symptom": "shaking",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "this morning",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [
+                "juice"
+              ],
+              "associated_symptoms": [
+                "sweating",
+                "couldn't think straight"
+              ]
+            },
+            {
+              "symptom": "sweating",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "this morning",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [
+                "juice"
+              ],
+              "associated_symptoms": [
+                "shaking",
+                "couldn't think straight"
+              ]
+            },
+            {
+              "symptom": "difficulty thinking",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "this morning",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [
+                "juice"
+              ],
+              "associated_symptoms": [
+                "shaking",
+                "sweating"
+              ]
+            },
+            {
+              "symptom": "nausea",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "yesterday",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "juice",
+              "dose_text": null,
+              "effect_text": "came back up to 90"
+            },
+            {
+              "name": "glipizide",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "55",
+              "unit": "mg/dL"
+            },
+            {
+              "name": "blood sugar",
+              "value": "90",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": [
+            "passed out"
+          ]
+        },
+        "agent_response": {
+          "acknowledgment": "I hear you, Elena. You reported losing consciousness or nearly losing consciousness. Consider seeking prompt medical evaluation.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": "red_flag_static",
+          "reason_code": "red_flags_detected",
+          "safety_mode": "static_safety",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "You reported losing consciousness or nearly losing consciousness. Consider seeking prompt medical evaluation.",
+        "contact_clinician_reason": "red_flags_detected",
+        "image_analysis": null,
+        "log_id": "log_6ded42a4df8d"
+      },
+      "followup_answer": "About a cup of orange juice. My daughter was here thank goodness. My sugar came back up to 90 after maybe 15 minutes.",
+      "followup_response": "You reported losing consciousness or nearly losing consciousness. Consider seeking prompt medical evaluation.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "About a cup of orange juice. My daughter was here thank goodness. My sugar came back up to 90 after maybe 15 minutes.",
+          "agent_response": "You reported losing consciousness or nearly losing consciousness. Consider seeking prompt medical evaluation.",
+          "answered_at": "2026-02-21T06:24:37.138361Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 18,
+      "week": 3,
+      "phase": null,
+      "transcript": "Talked to my doctor's office about yesterday. They said always eat before the glipizide, never skip meals. Feeling better, sugar 150 this morning. Swelling went down too. I'm just... frustrated. All these pills and I still feel terrible half the time.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Talked to my doctor's office about yesterday. They said always eat before the glipizide, never skip meals. Feeling better, sugar 150 this morning. Swelling went down too. I'm just... frustrated. All these pills and I still feel terrible half the time.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "glipizide",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "150",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "It sounds really frustrating to be dealing with so many medications and still not feeling your best, Elena. I'm glad the swelling went down and your blood sugar is improving.",
+          "immediate_question": "You mentioned feeling better after talking to the doctor's office about eating before the glipizide. How are you feeling now compared to yesterday?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "Patient reports improvement after advice from doctor's office; follow up on current status.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_6c54dcf193b5"
+      },
+      "followup_answer": "Thank you. It just feels like I can't win \u2014 the pills make me sick but if I skip them my sugar goes crazy. The doctor said keep taking everything but always eat first. I'm trying.",
+      "followup_response": "Thank you for sharing how you're feeling, Elena. It's completely understandable to feel frustrated when managing diabetes involves multiple medications and dietary adjustments, especially when side effects like nausea are present. I will note that your blood sugar is 150 this morning; while not critically high, it is elevated, and given your diagnosis of Type 2 Diabetes, continued monitoring and discussion with your doctor about these readings would be wise.",
+      "followup_exchanges": [
+        {
+          "question": "You mentioned feeling better after talking to the doctor's office about eating before the glipizide. How are you feeling now compared to yesterday?",
+          "answer": "Thank you. It just feels like I can't win \u2014 the pills make me sick but if I skip them my sugar goes crazy. The doctor said keep taking everything but always eat first. I'm trying.",
+          "agent_response": "Thank you for sharing how you're feeling, Elena. It's completely understandable to feel frustrated when managing diabetes involves multiple medications and dietary adjustments, especially when side effects like nausea are present. I will note that your blood sugar is 150 this morning; while not critically high, it is elevated, and given your diagnosis of Type 2 Diabetes, continued monitoring and discussion with your doctor about these readings would be wise.",
+          "answered_at": "2026-02-21T06:25:03.210331Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 20,
+      "week": 3,
+      "phase": null,
+      "transcript": "Knee's been bothering me. Took ibuprofen 400mg. Sugar was 144. At least that's something.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Knee's been bothering me. Took ibuprofen 400mg. Sugar was 144. At least that's something.",
+          "symptoms": [
+            {
+              "symptom": "knee bothering",
+              "location": "knee",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "ibuprofen",
+              "dose_text": "400mg",
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "144",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for logging in, Elena. It's good to see your blood sugar is stable today.",
+          "immediate_question": "NSAIDs like ibuprofen can reduce the effectiveness of blood pressure medications and may affect kidney function. Worth discussing with your clinician, especially if you're taking them regularly.",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_interaction",
+          "reason_code": "nsaid_ace_inhibitor_interaction",
+          "safety_mode": "safety_override",
+          "tool_calls": [
+            "invoke_protocol:medication_interaction"
+          ],
+          "question_rationale": "Safety override: medication_interaction \u2014 nsaid_ace_inhibitor_interaction",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 medication_interaction"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "NSAIDs can reduce the effectiveness of blood pressure medications and affect kidney function. Consider discussing this with your clinician.",
+        "contact_clinician_reason": "nsaid_ace_inhibitor_interaction",
+        "image_analysis": null,
+        "log_id": "log_4b1a529f608e"
+      },
+      "followup_answer": "About a 6. It aches when I walk and going up stairs is really rough.",
+      "followup_response": "Thanks for sharing that, Elena. The knee pain is significantly impacting your mobility and daily activities like walking and using stairs. I'll be sure to note this level of discomfort in your record.",
+      "followup_exchanges": [
+        {
+          "question": "NSAIDs like ibuprofen can reduce the effectiveness of blood pressure medications and may affect kidney function. Worth discussing with your clinician, especially if you're taking them regularly.",
+          "answer": "About a 6. It aches when I walk and going up stairs is really rough.",
+          "agent_response": "Thanks for sharing that, Elena. The knee pain is significantly impacting your mobility and daily activities like walking and using stairs. I'll be sure to note this level of discomfort in your record.",
+          "answered_at": "2026-02-21T06:25:26.330118Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 21,
+      "week": 3,
+      "phase": null,
+      "transcript": "Knee's still bad, took another ibuprofen 400. Should I be worried about taking so much?",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Knee's still bad, took another ibuprofen 400. Should I be worried about taking so much?",
+          "symptoms": [
+            {
+              "symptom": "knee",
+              "location": "knee",
+              "character": "bad",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": "still",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "ibuprofen",
+              "dose_text": "400mg",
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Taking ibuprofen frequently can sometimes cause stomach upset or other issues, especially with diabetes. It's good you're asking about it. Let's get a better sense of how often you've been taking it.",
+          "immediate_question": "How many times have you taken ibuprofen in the last 24 hours?",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_interaction",
+          "reason_code": "nsaid_ace_inhibitor_interaction",
+          "safety_mode": "safety_override",
+          "tool_calls": [
+            "invoke_protocol:medication_interaction"
+          ],
+          "question_rationale": "Safety override: medication_interaction \u2014 nsaid_ace_inhibitor_interaction",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 medication_interaction"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "NSAIDs can reduce the effectiveness of blood pressure medications and affect kidney function. Consider discussing this with your clinician.",
+        "contact_clinician_reason": "nsaid_ace_inhibitor_interaction",
+        "image_analysis": null,
+        "log_id": "log_166f54c8c070"
+      },
+      "followup_answer": "This is the second day now. The pain's still about a 6, maybe a 7 today. The ibuprofen helps for a few hours but then it comes right back.",
+      "followup_response": "Thanks for clarifying that this is the second day of taking ibuprofen multiple times, and the pain is still significant despite it. It's understandable that you're concerned about taking so much medication; I will make a note to discuss your ibuprofen use with the doctor.",
+      "followup_exchanges": [
+        {
+          "question": "How many times have you taken ibuprofen in the last 24 hours?",
+          "answer": "This is the second day now. The pain's still about a 6, maybe a 7 today. The ibuprofen helps for a few hours but then it comes right back.",
+          "agent_response": "Thanks for clarifying that this is the second day of taking ibuprofen multiple times, and the pain is still significant despite it. It's understandable that you're concerned about taking so much medication; I will make a note to discuss your ibuprofen use with the doctor.",
+          "answered_at": "2026-02-21T06:25:45.646783Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 22,
+      "week": 4,
+      "phase": "Stabilizing \u2014 profile evolution + doctor prep",
+      "transcript": "Nausea's back. I ate first this time, still a 3. Sugar 152. I'm writing all this down for my doctor appointment.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Nausea's back. I ate first this time, still a 3. Sugar 152. I'm writing all this down for my doctor appointment.",
+          "symptoms": [
+            {
+              "symptom": "nausea",
+              "location": null,
+              "character": null,
+              "severity_1_10": 3,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "food",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "152",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for logging that, Elena. It's good you're tracking the nausea and blood sugar together, especially since it happens after eating.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_61a19a82bfa4"
+      },
+      "followup_answer": "I think it's more the metformin. The glipizide doesn't seem to bother me as much. But honestly it's hard to tell since I take them together.",
+      "followup_response": "Thanks for clarifying which medication you suspect might be causing more issues, Elena. It's understandable how frustrating it is when side effects are hard to pinpoint, especially when taking multiple medications together. I'll make sure this detail about the metformin potentially being the main culprit for nausea is noted in your log for your doctor.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "I think it's more the metformin. The glipizide doesn't seem to bother me as much. But honestly it's hard to tell since I take them together.",
+          "agent_response": "Thanks for clarifying which medication you suspect might be causing more issues, Elena. It's understandable how frustrating it is when side effects are hard to pinpoint, especially when taking multiple medications together. I'll make sure this detail about the metformin potentially being the main culprit for nausea is noted in your log for your doctor.",
+          "answered_at": "2026-02-21T06:26:04.865030Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 24,
+      "week": 4,
+      "phase": null,
+      "transcript": "Headache again and a little woozy. Took some tylenol. Sugar was 160. Do you think the dizziness is from my blood pressure medicine?",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Headache again and a little woozy. Took some tylenol. Sugar was 160. Do you think the dizziness is from my blood pressure medicine?",
+          "symptoms": [
+            {
+              "symptom": "headache",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "dizziness",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "woozy",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "tylenol",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "160",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Dizziness can sometimes be a side effect of blood pressure medications like Lisinopril, especially when standing up quickly (orthostatic hypotension), which you've mentioned before. It could also potentially relate to your blood sugar levels or other factors. Since you took Tylenol for the headache, let's clarify the dose.",
+          "immediate_question": "What dose of Tylenol did you take?",
+          "scheduled_checkin": null,
+          "protocol_id": "headache_protocol",
+          "reason_code": "headache_missing_severity",
+          "safety_mode": "llm_user_question_priority",
+          "tool_calls": [
+            "invoke_protocol:headache_protocol"
+          ],
+          "question_rationale": "Missing information: Dose of Tylenol taken. Need to know the dose for accurate record-keeping and potential follow-up.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 headache_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_91d81e5ec250"
+      },
+      "followup_answer": "The wooziness is maybe a 4. It comes and goes \u2014 gets worse when I stand up. I took 500mg tylenol for the headache, which was more like a 6.",
+      "followup_response": "Okay, thanks for clarifying the Tylenol dose and describing the wooziness more fully. It's helpful to know it gets worse when standing up, which could be related to blood pressure changes or other factors, and that you rated the headache as a 6 before taking medication.",
+      "followup_exchanges": [
+        {
+          "question": "What dose of Tylenol did you take?",
+          "answer": "The wooziness is maybe a 4. It comes and goes \u2014 gets worse when I stand up. I took 500mg tylenol for the headache, which was more like a 6.",
+          "agent_response": "Okay, thanks for clarifying the Tylenol dose and describing the wooziness more fully. It's helpful to know it gets worse when standing up, which could be related to blood pressure changes or other factors, and that you rated the headache as a 6 before taking medication.",
+          "answered_at": "2026-02-21T06:26:32.812636Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 26,
+      "week": 4,
+      "phase": null,
+      "transcript": "Good day! Took everything on time, ate before my meds, sugar was 139. Maybe I'm figuring this out.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Good day! Took everything on time, ate before my meds, sugar was 139. Maybe I'm figuring this out.",
+          "symptoms": [],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "139",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Good morning, Elena! It's great to hear you took everything on time and ate before your meds. A blood sugar of 139 is a good reading.",
+          "immediate_question": "How are you feeling today compared to the last few days, especially regarding nausea or dizziness?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "Patient reports potentially figuring things out after recent medication adjustments and meal timing. Checking in on current symptom status (nausea, dizziness) is important.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_6d6ef7cef77a"
+      },
+      "followup_answer": "Actually no nausea today! First time in a while. I had a big breakfast \u2014 scrambled eggs and whole wheat toast \u2014 before my pills.",
+      "followup_response": "It seems having a substantial breakfast before your medication might be helping, which is definitely worth noting. I hope this positive change continues.",
+      "followup_exchanges": [
+        {
+          "question": "How are you feeling today compared to the last few days, especially regarding nausea or dizziness?",
+          "answer": "Actually no nausea today! First time in a while. I had a big breakfast \u2014 scrambled eggs and whole wheat toast \u2014 before my pills.",
+          "agent_response": "It seems having a substantial breakfast before your medication might be helping, which is definitely worth noting. I hope this positive change continues.",
+          "answered_at": "2026-02-21T06:26:55.694922Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 28,
+      "week": 4,
+      "phase": null,
+      "transcript": "Morning nausea again, about a 4. Sugar 148. I've been keeping a list of questions for my doctor. This app has been really helpful for tracking everything.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Morning nausea again, about a 4. Sugar 148. I've been keeping a list of questions for my doctor. This app has been really helpful for tracking everything.",
+          "symptoms": [
+            {
+              "symptom": "nausea",
+              "location": null,
+              "character": null,
+              "severity_1_10": 4,
+              "onset_time_text": "Morning",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "148",
+              "unit": null
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for logging in this morning, Elena. It's good to hear the app is helpful for tracking things as you prepare for your doctor's appointment.",
+          "immediate_question": "You mentioned keeping a list of questions for your doctor. Is there anything specific related to the nausea or blood sugar that you'd like to discuss further now?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "Patient is tracking symptoms and preparing for a doctor visit; probing for specific concerns can help guide the conversation and identify priorities.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_1a378a30e319"
+      },
+      "followup_answer": "It's about a 4 today, same as usual. It happens pretty much every morning after the metformin. Even when I eat first, though eating helps a little \u2014 maybe 6 out of 10 mornings I get hit with it.",
+      "followup_response": "Thanks for clarifying about the nausea. It seems consistently present in the mornings, rated around a 4, and is possibly related to taking Metformin, even when eating first. I'll continue tracking this alongside your blood sugar readings.",
+      "followup_exchanges": [
+        {
+          "question": "You mentioned keeping a list of questions for your doctor. Is there anything specific related to the nausea or blood sugar that you'd like to discuss further now?",
+          "answer": "It's about a 4 today, same as usual. It happens pretty much every morning after the metformin. Even when I eat first, though eating helps a little \u2014 maybe 6 out of 10 mornings I get hit with it.",
+          "agent_response": "Thanks for clarifying about the nausea. It seems consistently present in the mornings, rated around a 4, and is possibly related to taking Metformin, even when eating first. I'll continue tracking this alongside your blood sugar readings.",
+          "answered_at": "2026-02-21T06:27:12.250664Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 30,
+      "week": 4,
+      "phase": null,
+      "transcript": "Doctor appointment is Thursday. Can you help me put together a summary of everything? Fasting sugar 143 today.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Doctor appointment is Thursday. Can you help me put together a summary of everything? Fasting sugar 143 today.",
+          "symptoms": [],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "blood sugar",
+              "value": "143",
+              "unit": "mg/dL"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Elena, I can definitely help you summarize things for your appointment. Based on your recent logs and history, it looks like you've been experiencing nausea, headaches, and dizziness ('woozy'). Your blood sugar has been fluctuating but generally in the 140-155 range recently. You mentioned nausea related to Glipizide and Metformin, especially after meals, and morning dizziness when standing up. It's also worth noting that you have hypertension and type 2 diabetes, and are allergic to sulfa drugs.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_be4a68e0fdb5"
+      },
+      "followup_answer": "Oh that would be amazing. I'm just anxious about the appointment \u2014 I want to make sure we cover the nausea, the dizzy spells, that scary low sugar episode, all of it. Thank you.",
+      "followup_response": "Thank you for sharing all of that, Elena. It helps to have a clear picture of what you're experiencing and want to discuss at your appointment, especially the nausea, dizziness, and low sugar episode. I've noted these concerns along with your fasting glucose reading from today.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Oh that would be amazing. I'm just anxious about the appointment \u2014 I want to make sure we cover the nausea, the dizzy spells, that scary low sugar episode, all of it. Thank you.",
+          "agent_response": "Thank you for sharing all of that, Elena. It helps to have a clear picture of what you're experiencing and want to discuss at your appointment, especially the nausea, dizziness, and low sugar episode. I've noted these concerns along with your fasting glucose reading from today.",
+          "answered_at": "2026-02-21T06:27:36.279579Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    }
+  ],
+  "doctor_packet": {
+    "hpi": "Elena Martinez is a 62-year-old female with a history of hypertension and type 2 diabetes presenting with multiple new symptoms over the past few weeks, coinciding with the initiation of glipizide therapy approximately two weeks prior to symptom onset. She reports persistent nausea occurring after taking her morning medications (metformin 500mg and glipizide 5mg), which has ranged in severity from 2/10 to 5/10. On February 4th, she experienced a new episode of orthostatic dizziness, described as spinning, with a severity of 7/10. She also reports new onset peripheral edema (puffy ankles) noted on February 5th. Additionally, her blood glucose control seems affected; she had a postprandial glucose level of 195 mg/dL on February 3rd, and on February 5th, after skipping her evening dose of metformin 500mg, her fasting blood glucose was elevated at 230 mg/dL. She is concerned about these new symptoms and their potential impact on her health.",
+    "pertinent_positives": [
+      "Nausea: Onset ~January 22nd, post-medication (metformin 500mg, glipizide 5mg), severity range 2/10 to 5/10.",
+      "Orthostatic dizziness: New onset February 4th, spinning sensation, severity 7/10.",
+      "Peripheral edema: New onset February 5th (puffy ankles).",
+      "Hyperglycemia: Postprandial glucose 195 mg/dL on Feb 3rd. Fasting glucose 230 mg/dL on Feb 5th after skipping evening metformin 500mg.",
+      "Medications: Metformin 500mg BID, Glipizide 5mg QD, Lisinopril 10mg QD."
+    ],
+    "pertinent_negatives": [],
+    "timeline_bullets": [
+      "2026-02-20: nausea; dizzy spells; low sugar episode; anxiety",
+      "2026-02-18: nausea (4/10); metformin",
+      "2026-02-16: meds",
+      "2026-02-14: headache (6/10); woozy (4/10); dizziness; tylenol 500mg",
+      "2026-02-12: nausea (3/10); metformin; glipizide",
+      "2026-02-11: knee pain (6/10); ibuprofen 400mg",
+      "2026-02-10: knee pain (6/10); ibuprofen 400mg",
+      "2026-02-08: feeling sick; sugar goes crazy; glipizide",
+      "2026-02-07: shaking; sweating; inability to think straight; nausea; juice About a cup; glipizide",
+      "2026-02-06: nausea; dizziness (6/10); puffy ankles; metformin",
+      "2026-02-05: dizziness (7/10)",
+      "2026-02-04: nausea (5/10)",
+      "2026-02-02: metformin 500mg; glipizide 5mg",
+      "2026-01-31: feeling sick (4/10); tiredness (4/10); metformin 500mg",
+      "2026-01-29: nausea (5/10); metformin 500mg; glipizide",
+      "2026-01-28: headache (5/10); ibuprofen 200mg",
+      "2026-01-26: nausea; headache; metformin",
+      "2026-01-24: nausea (3/10); metformin 500mg; glipizide 5mg; lisinopril 10mg",
+      "2026-01-23: queasiness (2/10); Metformin 500mg; glipizide 5mg",
+      "2026-01-22: metformin; glipizide 500 milligrams"
+    ],
+    "questions_for_clinician": [
+      "Is this nausea normal with the new medication (glipizide)?",
+      "Why am I suddenly getting dizzy when I stand up?",
+      "What's causing my ankles to swell up?",
+      "Why is my blood sugar so high even though I take my pills? Is it the new pill or something else?",
+      "Did starting this new diabetes medicine mess up my blood sugar control?",
+      "Is skipping one dose of metformin really going to make my fasting sugar that high?",
+      "Are these symptoms related to each other, or are they separate problems?"
+    ],
+    "system_longitudinal_flags": [
+      "Patient initiated glipizide therapy approximately 10 days prior to symptom onset. Since initiation, there is a temporal correlation between medication administration (metformin 500mg, glipizide 5mg) and reported symptoms: nausea (severity score increasing from 2/10 to 5/10), orthostatic dizziness (severity 7/10, spinning sensation), peripheral edema (puffy ankles), and hyperglycemia (postprandial glucose 195 mg/dL on 2026-02-03). Skipping evening metformin resulted in fasting hyperglycemia (230 mg/dL) the following morning. The pattern suggests potential adverse drug reaction or altered metabolic response to current medication regimen.",
+      "Patient reports persistent post-prandial/post-medication nausea (severity score range 2-5/10) since approximately 2026-01-22, temporally associated with metformin administration. On 2026-02-04, the patient experienced orthostatic dizziness (severity 7/10). On 2026-02-05, the patient reported peripheral edema (puffy ankles) concurrent with hyperglycemia (BG 230) following omission of evening metformin dose. These symptoms emerged within a timeframe of approximately 14 days.",
+      "Patient reports persistent post-prandial/post-medication nausea (severity score range 2-5/10) since approximately 2026-01-22, temporally associated with metformin administration. On 2026-02-04, the patient experienced orthostatic dizziness (severity 7/10). On 2026-02-05, the patient reported peripheral edema (puffy ankles) concurrent with hyperglycemia (BG 230) following omission of evening metformin dose. These symptoms emerged within a timeframe of approximately 14 days.",
+      "Patient reports subjective nausea (severity score range 2-5/10) temporally associated with morning administration of metformin 500mg and glipizide 5mg, beginning approximately 2026-01-22. Patient reports orthostatic dizziness (severity score 7/10) on 2026-02-04. Patient reports bilateral ankle edema onset on 2026-02-05. Baseline fasting blood glucose (2026-01-19/20) was 145 mg/dL. Recent fasting blood glucose levels have ranged from 138-148 mg/dL. Postprandial blood glucose on 2026-02-03 was 195 mg/dL.",
+      "Patient initiated glipizide therapy approximately 2 weeks prior to symptom onset. Since initiation, there is a documented increase in nausea severity (rated 2/10 on 2026-01-22, rated 5/10 on 2026-01-28 and 2026-02-03). New onset orthostatic dizziness occurred on 2026-02-04 (severity 7/10). New onset peripheral edema (puffy ankles) was reported on 2026-02-05. Concurrent hyperglycemia (postprandial glucose 195 mg/dL on 2026-02-03) is also noted."
+    ]
+  },
+  "watchdog_results": {
+    "pending_checkins": [
+      {
+        "id": "watchdog_84afc1d2b9cd",
+        "checkin_type": "health_insight",
+        "scheduled_for": "2026-02-21T06:24:06.665076+00:00",
+        "message": "Over the past week, you've reported increasing nausea, dizziness when standing up, and new puffy ankles. Your blood sugar has also been higher than usual on some occasions. It would be helpful to discuss these changes with your doctor.",
+        "context": {
+          "source": "watchdog",
+          "rationale_logged": true
+        }
+      }
+    ],
+    "clinician_observations": [
+      "Patient initiated glipizide therapy approximately 10 days prior to symptom onset. Since initiation, there is a temporal correlation between medication administration (metformin 500mg, glipizide 5mg) and reported symptoms: nausea (severity score increasing from 2/10 to 5/10), orthostatic dizziness (severity 7/10, spinning sensation), peripheral edema (puffy ankles), and hyperglycemia (postprandial glucose 195 mg/dL). Skipping evening metformin resulted in fasting hyperglycemia (230 mg/dL) the following morning. The pattern suggests potential adverse drug reaction or altered metabolic response to current medication regimen.",
+      "Patient reports persistent post-prandial/post-medication nausea (severity score range 2-5/10) since approximately 2026-01-22, temporally associated with metformin administration. On 2026-02-04, the patient experienced orthostatic dizziness (severity 7/10). On 2026-02-05, the patient reported peripheral edema (puffy ankles) concurrent with hyperglycemia (BG 230) following omission of evening metformin dose. These symptoms emerged within a timeframe of approximately 14 days.",
+      "Patient reports persistent post-prandial/post-medication nausea (severity score range 2-5/10) since approximately 2026-01-22, temporally associated with metformin administration. On 2026-02-04, the patient experienced orthostatic dizziness (severity 7/10). On 2026-02-05, the patient reported peripheral edema (puffy ankles) concurrent with hyperglycemia (BG 230) following omission of evening metformin dose. These symptoms emerged within a timeframe of approximately 14 days.",
+      "Patient reports subjective nausea (severity score range 2-5/10) temporally associated with morning administration of metformin 500mg and glipizide 5mg, beginning approximately 2026-01-22. Patient reports orthostatic dizziness (severity score 7/10) on 2026-02-04. Patient reports bilateral ankle edema onset on 2026-02-05. Blood glucose level was 230 mg/dL on 2026-02-05 following omission of evening metformin dose. Baseline fasting blood glucose (2026-01-19/20) was 145 mg/dL. Recent fasting blood glucose levels have ranged from 138-148 mg/dL. Postprandial blood glucose on 2026-02-03 was 195 mg/dL.",
+      "Patient initiated glipizide therapy approximately 2 weeks prior to symptom onset. Since initiation, there is a documented increase in nausea severity (rated 2/10 on 2026-01-22, rated 5/10 on 2026-01-28 and 2026-02-03). New onset orthostatic dizziness occurred on 2026-02-04 (severity 7/10). New onset peripheral edema (puffy ankles) was reported on 2026-02-05. Concurrent hyperglycemia (postprandial glucose 195 mg/dL on 2026-02-03) is also noted.",
+      "Patient reports persistent nausea (severity scores 3-5/10) temporally associated with morning administration of metformin and glipizide, beginning approximately 2026-01-22. On 2026-02-03, patient experienced dizziness upon standing (severity 7/10). On 2026-02-04, patient reported concurrent symptoms of dizziness (severity 6/10) and bilateral ankle edema, along with hyperglycemia (BG 230 mg/dL) following omission of evening metformin dose. These symptoms represent a cluster of new or worsening complaints including gastrointestinal distress, orthostatic symptoms, and peripheral edema occurring within the context of ongoing diabetes management with metformin and glipizide.",
+      "Patient reports subjective nausea, severity ranging from 2/10 to 5/10, temporally associated with morning administration of metformin 500mg and glipizide 5mg, beginning approximately 2026-01-21. Patient reports orthostatic dizziness, severity 6/10 and 7/10, occurring on 2026-02-03 and 2026-02-04 respectively. Patient reports bilateral ankle edema, onset approximately 2026-02-04. Glycemic log shows fasting glucose levels generally in the range of 138-155 mg/dL prior to 2026-02-04, with a postprandial reading of 195 mg/dL on 2026-02-02 and a fasting reading of 230 mg/dL on 2026-02-04 following omission of evening metformin dose.",
+      "Patient initiated on Metformin and Glipizide (baseline 2026-01-19). Since 2026-01-21, patient reports intermittent nausea (severity scores 3/10, 5/10), fatigue ('feeling sick', severity 4/10), and dizziness (severity 6/10, orthostatic component noted). On 2026-02-04, symptoms coincided with skipping evening Metformin, followed by hyperglycemia (BG 230) and new onset peripheral edema ('puffy ankles'). Recent fasting BG readings are elevated (155, 140, 148, 142, 138). Postprandial BG reading on 2026-02-02 was significantly elevated (195).",
+      "Patient reports subjective nausea temporally associated with metformin/glipizide administration, increasing in severity from 3/10 (2026-01-21) to 5/10 (2026-02-01). New onset orthostatic dizziness reported (2026-02-02), with associated severity score of 6/10 on subsequent day (2026-02-03). Peripheral edema (puffy ankles) also newly reported (2026-02-03). Skipping evening dose of metformin resulted in hyperglycemia (BG 230 mg/dL, 2026-02-03).",
+      "Patient reports subjective nausea (severity 3/10 on 2026-01-21, severity 5/10 on 2026-02-01) temporally associated with metformin administration. New onset symptom of dizziness upon standing reported on 2026-02-02, with increased severity (6/10) noted on 2026-02-03. Peripheral edema (puffy ankles) also newly reported on 2026-02-03. Hyperglycemia (230 mg/dL) observed on 2026-02-03 following omission of evening metformin dose. The constellation of nausea, orthostatic dizziness, peripheral edema, and hyperglycemia is present.",
+      "Patient reports postprandial nausea temporally associated with oral administration of metformin 500mg and glipizide 5mg on multiple occasions (2026-01-20, 2026-01-26). Nausea severity was quantified as 3/10 on 2026-01-21. No other significant symptoms or changes in medication regimen reported within the observation window.",
+      "Patient initiated glipizide therapy (date unspecified, but recent). Post-glipizide initiation, the patient reports onset of nausea (severity 3/10 on 2026-01-20, present on 2026-01-19) and a new symptom of headache (2026-01-24). Fasting blood glucose levels remain relatively stable (range 140-155 mg/dL) during this period."
+    ]
+  },
+  "total_logs": 20,
+  "degraded_logs": 0
+}

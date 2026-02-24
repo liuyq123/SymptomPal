@@ -1,0 +1,14 @@
+{
+  "task_name": "lung_sound_3class_us2p0_pytorch",
+  "classifier": "PyTorch",
+  "accuracy": 0.773117076808352,
+  "f1_score": 0.7826514355963733,
+  "focal_gamma": 1.0,
+  "lr": 0.0005,
+  "epochs": 200,
+  "classes": [
+    "crackle",
+    "normal",
+    "wheeze"
+  ]
+}

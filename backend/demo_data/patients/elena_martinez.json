@@ -1,0 +1,227 @@
+{
+  "profile": {
+    "user_id": "elena_martinez",
+    "name": "Elena Martinez",
+    "age": 62,
+    "gender": "female",
+    "conditions": [],
+    "allergies": [],
+    "regular_medications": [],
+    "patterns": [],
+    "health_summary": ""
+  },
+  "intake_answers": [
+    {
+      "question_id": "name",
+      "answer": "Elena Martinez"
+    },
+    {
+      "question_id": "age_sex",
+      "answer": "62, female"
+    },
+    {
+      "question_id": "conditions",
+      "answer": "I have type 2 diabetes and hypertension."
+    },
+    {
+      "question_id": "allergies",
+      "answer": "Sulfa drugs \u2014 I had a bad reaction once."
+    },
+    {
+      "question_id": "regular_medications",
+      "answer": "Metformin 500 milligrams twice a day with meals, glipizide 5 milligrams in the morning \u2014 that one's new \u2014 and lisinopril 10 milligrams."
+    },
+    {
+      "question_id": "surgeries",
+      "answer": "No, nothing major."
+    },
+    {
+      "question_id": "family_history",
+      "answer": "My mother had diabetes too, and my father had a heart attack at 65."
+    },
+    {
+      "question_id": "social_history",
+      "answer": "I don't drink or smoke. I try to walk in the mornings when my knees cooperate. Retired teacher."
+    },
+    {
+      "question_id": "patterns",
+      "answer": "I take my medications with breakfast and dinner. I check my fasting blood sugar most mornings. The glipizide is new, my doctor just added it."
+    },
+    {
+      "question_id": "health_summary",
+      "answer": "I'm 62, retired teacher. Had the diabetes about 15 years now. The blood pressure maybe 8 years. I try to be a good patient but the side effects from the new pill are getting to me."
+    }
+  ],
+  "character_notes": "Retired teacher. Tries to be compliant ('good student') but struggles with side effects. Expresses frustration about quality of life.",
+  "design_notes": {
+    "medical_accuracy": "Glipizide (sulfonylurea) added to explain hypoglycemia \u2014 metformin alone doesn't cause lows. Lisinopril explains orthostatic dizziness.",
+    "patient_voice": "Natural and emotional, not clinical data-reporting. She complains, asks questions, references prior agent advice.",
+    "detective_arc": "Patient responds to agent suggestions in later logs (e.g., Day 12 references eating before pills). Shows conversation continuity.",
+    "contextual_inquiry": "After 3rd nausea report, agent should shift from 'how bad?' to 'are you taking it with food?' \u2014 tests smart follow-up behavior."
+  },
+  "symptom_logs": [
+    {
+      "day": 1,
+      "time": "08:00",
+      "week": 1,
+      "phase": "Getting started \u2014 the compliant patient",
+      "transcript": "Hi, just took my morning pills. Metformin and that new one, glipizide. Blood sugar was 145 before breakfast.",
+      "followup_answer": "500 milligrams, same as always. My sugar's usually around 140 to 155 most mornings \u2014 I've been checking almost every day since they added the glipizide."
+    },
+    {
+      "day": 2,
+      "time": "08:15",
+      "week": 1,
+      "transcript": "Metformin 500, glipizide 5mg. Felt kinda queasy after though. Is that normal? Blood sugar 155.",
+      "followup_answer": "Maybe a 2 or 3. Not terrible, just uncomfortable. Like a queasy feeling in my stomach."
+    },
+    {
+      "day": 3,
+      "time": "08:30",
+      "week": 1,
+      "transcript": "Took my metformin and glipizide, and my blood pressure pill too. Sugar was 140. The nausea was maybe a 3, not terrible.",
+      "followup_answer": "Just a couple weeks \u2014 my doctor added it at my last visit. I'm on metformin 500, glipizide 5mg, and lisinopril 10mg. I take them all with breakfast."
+    },
+    {
+      "day": 5,
+      "time": "08:00",
+      "week": 1,
+      "transcript": "Everything on time today. Sugar was 140 fasting. No complaints for once!",
+      "followup_answer": "Honestly the nausea seems to come right after I take the metformin. The headache was just a one-time thing I think."
+    },
+    {
+      "day": 7,
+      "time": "14:00",
+      "week": 1,
+      "transcript": "Had a bad headache after lunch so I took some ibuprofen. Sugar was 148 this morning.",
+      "followup_answer": "Maybe a 5? It was a dull throbbing behind my eyes. I took 200mg of ibuprofen and it helped a little."
+    },
+    {
+      "day": 8,
+      "time": "08:30",
+      "week": 2,
+      "phase": "The nausea pattern \u2014 frustration builds",
+      "transcript": "Ugh, nauseous again right after breakfast. I'm starting to dread taking these pills. Took my metformin 500 and glipizide.",
+      "followup_answer": "5 milligrams, the usual. But the nausea was like a 5 today \u2014 worse than usual. Had to sit down for 20 minutes after breakfast."
+    },
+    {
+      "day": 10,
+      "time": "09:00",
+      "week": 2,
+      "transcript": "I'm so tired of feeling sick every morning. It's definitely the metformin. Maybe a 4 out of 10 but it ruins my whole morning. Sugar was 142.",
+      "followup_answer": "500mg, same as always. I usually just have toast and coffee, then take the pills right after. Maybe I should eat more first?"
+    },
+    {
+      "day": 12,
+      "time": "09:15",
+      "week": 2,
+      "transcript": "Tried eating a bigger breakfast before my pills like I was thinking about. Actually felt a little better today! Sugar 138.",
+      "detective_arc": true,
+      "followup_answer": "Maybe a 7? I'd say noticeably better. I had eggs and toast before taking my pills instead of just coffee. The metformin is still 500mg and glipizide 5mg, same as always."
+    },
+    {
+      "day": 14,
+      "time": "20:30",
+      "week": 2,
+      "transcript": "Ate before my meds but still nauseous, about a 5. And my sugar after dinner was 195 \u2014 that seems high. I had pasta, is that why?",
+      "followup_answer": "That makes sense about the pasta. I'll try to watch the carbs more. The nausea is still frustrating though \u2014 even eating first doesn't always help."
+    },
+    {
+      "day": 15,
+      "time": "07:30",
+      "week": 3,
+      "phase": "Things go wrong \u2014 missed dose + hypoglycemia crisis",
+      "transcript": "Got really dizzy when I stood up this morning. Had to grab the counter. Scared me a little.",
+      "followup_answer": "Maybe a 7. It was really scary \u2014 the room was spinning when I stood up. I had to hold onto the counter for like a minute before it passed."
+    },
+    {
+      "day": 16,
+      "time": "07:45",
+      "week": 3,
+      "transcript": "I was so nauseous last night I skipped my evening metformin. Woke up to a sugar of 230. Still dizzy and now my ankles are puffy. I'd say the dizziness is a 6.",
+      "followup_answer": "I didn't take it \u2014 I skipped the 500mg evening dose because the nausea was so bad I thought I'd throw up."
+    },
+    {
+      "day": 17,
+      "time": "10:00",
+      "week": 3,
+      "transcript": "Something scary happened. My sugar crashed to 55 this morning \u2014 I was shaking, sweating, couldn't think straight. I almost passed out. My daughter made me drink juice and it came back up to 90. I think the glipizide did this because I barely ate yesterday from the nausea.",
+      "medical_note": "Medically accurate: Glipizide (sulfonylurea) + skipped meals from nausea = hypoglycemia. Patient correctly identifies the cause.",
+      "followup_answer": "About a cup of orange juice. My daughter was here thank goodness. My sugar came back up to 90 after maybe 15 minutes."
+    },
+    {
+      "day": 18,
+      "time": "09:00",
+      "week": 3,
+      "transcript": "Talked to my doctor's office about yesterday. They said always eat before the glipizide, never skip meals. Feeling better, sugar 150 this morning. Swelling went down too. I'm just... frustrated. All these pills and I still feel terrible half the time.",
+      "detective_arc": true,
+      "followup_answer": "Thank you. It just feels like I can't win \u2014 the pills make me sick but if I skip them my sugar goes crazy. The doctor said keep taking everything but always eat first. I'm trying."
+    },
+    {
+      "day": 20,
+      "time": "15:00",
+      "week": 3,
+      "transcript": "Knee's been bothering me. Took ibuprofen 400mg. Sugar was 144. At least that's something.",
+      "followup_answer": "About a 6. It aches when I walk and going up stairs is really rough."
+    },
+    {
+      "day": 21,
+      "time": "16:00",
+      "week": 3,
+      "transcript": "Knee's still bad, took another ibuprofen 400. Should I be worried about taking so much?",
+      "followup_answer": "This is the second day now. The pain's still about a 6, maybe a 7 today. The ibuprofen helps for a few hours but then it comes right back."
+    },
+    {
+      "day": 22,
+      "time": "08:30",
+      "week": 4,
+      "phase": "Stabilizing \u2014 profile evolution + doctor prep",
+      "transcript": "Nausea's back. I ate first this time, still a 3. Sugar 152. I'm writing all this down for my doctor appointment.",
+      "followup_answer": "I think it's more the metformin. The glipizide doesn't seem to bother me as much. But honestly it's hard to tell since I take them together."
+    },
+    {
+      "day": 24,
+      "time": "11:00",
+      "week": 4,
+      "transcript": "Headache again and a little woozy. Took some tylenol. Sugar was 160. Do you think the dizziness is from my blood pressure medicine?",
+      "followup_answer": "The wooziness is maybe a 4. It comes and goes \u2014 gets worse when I stand up. I took 500mg tylenol for the headache, which was more like a 6."
+    },
+    {
+      "day": 26,
+      "time": "08:00",
+      "week": 4,
+      "transcript": "Good day! Took everything on time, ate before my meds, sugar was 139. Maybe I'm figuring this out.",
+      "followup_answer": "Actually no nausea today! First time in a while. I had a big breakfast \u2014 scrambled eggs and whole wheat toast \u2014 before my pills."
+    },
+    {
+      "day": 28,
+      "time": "08:45",
+      "week": 4,
+      "transcript": "Morning nausea again, about a 4. Sugar 148. I've been keeping a list of questions for my doctor. This app has been really helpful for tracking everything.",
+      "followup_answer": "It's about a 4 today, same as usual. It happens pretty much every morning after the metformin. Even when I eat first, though eating helps a little \u2014 maybe 6 out of 10 mornings I get hit with it."
+    },
+    {
+      "day": 30,
+      "time": "09:00",
+      "week": 4,
+      "transcript": "Doctor appointment is Thursday. Can you help me put together a summary of everything? Fasting sugar 143 today.",
+      "followup_answer": "Oh that would be amazing. I'm just anxious about the appointment \u2014 I want to make sure we cover the nausea, the dizzy spells, that scary low sugar episode, all of it. Thank you."
+    }
+  ],
+  "feature_coverage": [
+    "medication_missing_dose_protocol",
+    "generic_severity_fallback_protocol",
+    "medication_checkin_timing",
+    "checkin_deduplication",
+    "insight_nudges_with_contextual_inquiry",
+    "red_flag_detection",
+    "safety_banner",
+    "contact_clinician_note",
+    "blood_sugar_extraction",
+    "detective_arc",
+    "emotional_quality_of_life_beats",
+    "profile_evolution",
+    "smart_snapshot",
+    "doctor_packet"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_name": "lung_sound_3class_us2p0_keras",
+  "classifier": "Keras",
+  "accuracy": 0.7306114839671887,
+  "f1_score": 0.751226765365641,
+  "macro_f1": 0.6482654516854263,
+  "focal_gamma": 1.0,
+  "lr": 0.001,
+  "best_epoch": 6,
+  "epochs_trained": 26,
+  "classes": [
+    "crackle",
+    "normal",
+    "wheeze"
+  ]
+}

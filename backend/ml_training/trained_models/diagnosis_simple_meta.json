@@ -1,0 +1,45 @@
+{
+  "task_name": "diagnosis_simple",
+  "best_model": "SVM (linear)",
+  "accuracy": 0.47019867549668876,
+  "f1_score": 0.46354652435116533,
+  "ensemble_accuracy": 0.4768211920529801,
+  "ensemble_f1": 0.473085941106738,
+  "classes": [
+    "COVID-19",
+    "healthy",
+    "infection"
+  ],
+  "model_scores": {
+    "SVM (linear)": {
+      "accuracy": 0.47019867549668876,
+      "f1_score": 0.46354652435116533,
+      "cv_mean": 0.3784459161147903
+    },
+    "SVM (rbf)": {
+      "accuracy": 0.36423841059602646,
+      "f1_score": 0.3406983744732089,
+      "cv_mean": 0.40235761589403973
+    },
+    "Logistic Regression": {
+      "accuracy": 0.45695364238410596,
+      "f1_score": 0.45515442158511354,
+      "cv_mean": 0.39702428256070643
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.40397350993377484,
+      "f1_score": 0.397354146956796,
+      "cv_mean": 0.4049536423841059
+    },
+    "Random Forest": {
+      "accuracy": 0.4105960264900662,
+      "f1_score": 0.40647039767944654,
+      "cv_mean": 0.3930684326710817
+    },
+    "MLP": {
+      "accuracy": 0.37748344370860926,
+      "f1_score": 0.37407011525202266,
+      "cv_mean": 0.40107726269315674
+    }
+  }
+}

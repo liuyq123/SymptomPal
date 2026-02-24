@@ -1,0 +1,49 @@
+{
+  "task_name": "cough_type",
+  "best_model": "MLP",
+  "accuracy": 0.6937441643323996,
+  "f1_score": 0.6626137634540996,
+  "ensemble_accuracy": 0.699813258636788,
+  "ensemble_f1": 0.6544901753512163,
+  "classes": [
+    "dry",
+    "wet"
+  ],
+  "model_scores": {
+    "LinearSVC": {
+      "accuracy": 0.6951447245564892,
+      "f1_score": 0.5722278457065699,
+      "cv_mean": 0.0
+    },
+    "Logistic Regression": {
+      "accuracy": 0.630718954248366,
+      "f1_score": 0.6430481794620264,
+      "cv_mean": 0.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.7030812324929971,
+      "f1_score": 0.6249820919045369,
+      "cv_mean": 0.0
+    },
+    "Random Forest": {
+      "accuracy": 0.7030812324929971,
+      "f1_score": 0.5978166852140582,
+      "cv_mean": 0.0
+    },
+    "MLP": {
+      "accuracy": 0.6937441643323996,
+      "f1_score": 0.6626137634540996,
+      "cv_mean": 0.0
+    },
+    "SGD (log_loss)": {
+      "accuracy": 0.6956115779645191,
+      "f1_score": 0.570738574431241,
+      "cv_mean": 0.0
+    },
+    "XGBoost": {
+      "accuracy": 0.69234360410831,
+      "f1_score": 0.6587025779242496,
+      "cv_mean": 0.0
+    }
+  }
+}

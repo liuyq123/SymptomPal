@@ -1,0 +1,2039 @@
+{
+  "patient": "frank_russo",
+  "profile": {
+    "user_id": "frank_russo",
+    "name": "Frank Russo",
+    "age": 61,
+    "gender": "male",
+    "conditions": [
+      "COPD (moderate)",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Penicillin allergy (reaction unspecified)"
+    ],
+    "regular_medications": [
+      "Advair is 250/50, twice a day morning and night",
+      "ProAir I just use as needed, couple puffs",
+      "Spiriva is 18 micrograms, once a day",
+      "the lisinopril is 20 milligrams"
+    ],
+    "surgeries": [
+      "Couple stitches on the job site"
+    ],
+    "family_history": [
+      "Father had emphysema, was a lifelong smoker.",
+      "Mother had hypertension."
+    ],
+    "social_history": [
+      "40 years of construction work experience",
+      "Current smoker",
+      "Previously smoked two packs per day",
+      "Retired now",
+      "Smokes approximately half a pack per day"
+    ],
+    "patterns": [
+      "Cold air worsens breathing symptoms.",
+      "Morning cough is normal.",
+      "Respiratory symptoms (cough, phlegm production, chest tightness, difficulty breathing) worsen with cold air exposure.",
+      "Respiratory symptoms (cough, phlegm production, chest tightness, difficulty breathing) worsen with physical exertion (walking, stairs).",
+      "Stairs worsen breathing symptoms.",
+      "Upper respiratory infection symptoms (fever, green/yellow phlegm, increased cough) appear to be present."
+    ],
+    "health_summary": "Patient experiences worsening COPD symptoms (cough, phlegm, chest tightness, shortness of breath) triggered by cold air and physical exertion. Recent logs suggest a possible upper respiratory infection with fever and change in phlegm color.",
+    "intake_completed": true
+  },
+  "simulation_timestamp": "2026-02-20T23:21:26.177002",
+  "base_date": "2026-01-09",
+  "intake_responses": [
+    {
+      "question_id": "name",
+      "agent_question": "Hi! I'm your health tracking assistant. What's your name?",
+      "patient_answer": "Frank Russo",
+      "parsed_items": []
+    },
+    {
+      "question_id": "age_sex",
+      "agent_question": "Nice to meet you! To help personalize your health tracking, how old are you and what's your biological sex?",
+      "patient_answer": "I'm 61, male",
+      "parsed_items": []
+    },
+    {
+      "question_id": "conditions",
+      "agent_question": "To personalize tracking, do you have any chronic conditions?",
+      "patient_answer": "Yeah I got COPD, the moderate kind they said. And high blood pressure.",
+      "parsed_items": [
+        "Hypertension",
+        "COPD (moderate)"
+      ]
+    },
+    {
+      "question_id": "allergies",
+      "agent_question": "Okay, thanks for letting me know about your COPD and high blood pressure. Now, shifting gears slightly, do you have any allergies to medications or foods?",
+      "patient_answer": "Penicillin. Found that out the hard way years ago.",
+      "parsed_items": [
+        "Penicillin allergy (reaction unspecified)"
+      ]
+    },
+    {
+      "question_id": "regular_medications",
+      "agent_question": "Okay, thanks for mentioning the penicillin allergy. Now, could you tell me about any medications or supplements you take regularly?",
+      "patient_answer": "Let me think... Spiriva, the Advair twice a day, and the rescue puffer, ProAir. Oh and lisinopril for the blood pressure.",
+      "parsed_items": [
+        "Spiriva (dose not specified)",
+        "Advair twice a day",
+        "Lisinopril (dose not specified)",
+        "ProAir rescue puffer (dose not specified)"
+      ]
+    },
+    {
+      "question_id": "medication_doses",
+      "agent_question": "You mentioned Lisinopril, ProAir rescue puffer, Spiriva \u2014 do you know the doses for each?",
+      "patient_answer": "Spiriva is 18 micrograms, once a day. The Advair is 250/50, twice a day morning and night. ProAir I just use as needed, couple puffs. And the lisinopril is 20 milligrams.",
+      "parsed_items": [
+        "Advair is 250/50, twice a day morning and night",
+        "Spiriva is 18 micrograms, once a day",
+        "ProAir I just use as needed, couple puffs",
+        "the lisinopril is 20 milligrams"
+      ]
+    },
+    {
+      "question_id": "surgeries",
+      "agent_question": "Any major surgeries or procedures in the past?",
+      "patient_answer": "Nah, nothing like that. Couple stitches on the job site but nothing real.",
+      "parsed_items": [
+        "Couple stitches on the job site"
+      ]
+    },
+    {
+      "question_id": "family_history",
+      "agent_question": "Okay, thanks. Now, thinking about your family, are there any significant health conditions that run in your family, like heart disease, diabetes, or cancer?",
+      "patient_answer": "Dad had emphysema, smoked his whole life. Mom had high blood pressure too.",
+      "parsed_items": [
+        "Father had emphysema, was a lifelong smoker.",
+        "Mother had hypertension."
+      ]
+    },
+    {
+      "question_id": "social_history",
+      "agent_question": "Thanks for sharing that. Now, thinking about your own lifestyle, do you currently smoke or use any tobacco products?",
+      "patient_answer": "I still smoke, down to about half a pack from two packs. 40 years of construction. Retired now.",
+      "parsed_items": [
+        "Current smoker",
+        "Previously smoked two packs per day",
+        "40 years of construction work experience",
+        "Smokes approximately half a pack per day",
+        "Retired now"
+      ]
+    },
+    {
+      "question_id": "patterns",
+      "agent_question": "Given your COPD and history of smoking, are there specific times or activities that seem to make your breathing symptoms worse?",
+      "patient_answer": "Morning cough is just my normal at this point. Stairs wind me pretty good. Cold air is bad.",
+      "parsed_items": [
+        "Cold air worsens breathing symptoms.",
+        "Morning cough is normal.",
+        "Stairs worsen breathing symptoms."
+      ]
+    }
+  ],
+  "log_responses": [
+    {
+      "day": 1,
+      "week": 1,
+      "phase": "Baseline \u2014 just how it is",
+      "transcript": "Hey, so I've got COPD, been dealing with it a few years now. I take my Spiriva every morning and my Advair twice a day, and I've got my rescue inhaler if I need it. Coughed up a bunch of phlegm this morning but that's pretty much every day for me. Clear stuff, nothing weird. Oh and I took my blood pressure pill too. I'm fine.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Hey, so I've got COPD, been dealing with it a few years now. I take my Spiriva every morning and my Advair twice a day, and I've got my rescue inhaler if I need it. Coughed up a bunch of phlegm this morning but that's pretty much every day for me. Clear stuff, nothing weird. Oh and I took my blood pressure pill too. I'm fine.",
+          "symptoms": [
+            {
+              "symptom": "coughing up phlegm",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": "every day",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "Spiriva",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Advair",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "rescue inhaler",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "blood pressure pill",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for logging in, Frank. You're managing your COPD as usual, taking your regular meds and rescue inhaler when needed.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "baseline_respiratory_suppressed",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_12b269722225"
+      },
+      "followup_answer": "The Spiriva? It's 18 micrograms, same one every morning. The cough is just my thing now \u2014 clear phlegm, same as always. I try not to think about it too much.",
+      "followup_response": "Thanks for clarifying about the Spiriva and the cough, Frank. It helps to know that the phlegm is clear and consistent with your usual pattern, even if it's a daily occurrence. I've noted the details about your medications and symptoms.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "The Spiriva? It's 18 micrograms, same one every morning. The cough is just my thing now \u2014 clear phlegm, same as always. I try not to think about it too much.",
+          "agent_response": "Thanks for clarifying about the Spiriva and the cough, Frank. It helps to know that the phlegm is clear and consistent with your usual pattern, even if it's a daily occurrence. I've noted the details about your medications and symptoms.",
+          "answered_at": "2026-02-21T04:11:22.498653Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 3,
+      "week": 1,
+      "phase": null,
+      "transcript": "Got winded going up the stairs at the hardware store this morning. Had to stop halfway and catch my breath, that was embarrassing. Used my rescue inhaler, it helped after a few minutes. Oh and I checked my oxygen when I got home, it was 95. That's normal for me right?",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Got winded going up the stairs at the hardware store this morning. Had to stop halfway and catch my breath, that was embarrassing. Used my rescue inhaler, it helped after a few minutes. Oh and I checked my oxygen when I got home, it was 95. That's normal for me right?",
+          "symptoms": [
+            {
+              "symptom": "winded",
+              "location": "going up the stairs",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "this morning",
+              "duration_text": null,
+              "triggers": [
+                "going up the stairs"
+              ],
+              "relievers": [
+                "rescue inhaler"
+              ],
+              "associated_symptoms": [
+                "catch my breath"
+              ]
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "rescue inhaler",
+              "dose_text": null,
+              "effect_text": "helped after a few minutes"
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "95",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "You're asking if 95% oxygen saturation is typical for you. Given your COPD and hypertension, maintaining adequate oxygen levels can be important. While 95% is generally considered within the normal range for many people, it's good that you're monitoring it, especially when experiencing shortness of breath. It's worth discussing with your doctor what target saturation level is best for you specifically.",
+          "immediate_question": "Can you describe how long it typically takes for your rescue inhaler to help when you feel winded?",
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "baseline_respiratory_suppressed",
+          "safety_mode": "llm_user_question_priority",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": "Understanding the usual response time to the rescue inhaler can provide context for this episode and future monitoring.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_beae04971c1e"
+      },
+      "followup_answer": "Maybe a 4? I mean on flat ground I'm mostly okay. It's the stairs that get me. I try to avoid them when I can.",
+      "followup_response": "Thanks for clarifying how long it takes for your rescue inhaler to work. It's understandable that needing it on stairs is frustrating, especially when you're trying to get things done.",
+      "followup_exchanges": [
+        {
+          "question": "Can you describe how long it typically takes for your rescue inhaler to help when you feel winded?",
+          "answer": "Maybe a 4? I mean on flat ground I'm mostly okay. It's the stairs that get me. I try to avoid them when I can.",
+          "agent_response": "Thanks for clarifying how long it takes for your rescue inhaler to work. It's understandable that needing it on stairs is frustrating, especially when you're trying to get things done.",
+          "answered_at": "2026-02-21T04:11:50.523637Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 5,
+      "week": 1,
+      "phase": null,
+      "transcript": "Good day actually. Cold morning but I bundled up, went to help my buddy with his deck project and I was fine as long as I paced myself. Didn't need the rescue inhaler at all. Took my Spiriva this morning and my Advair morning and evening. Linda says I'm still snoring like a freight train though.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Good day actually. Cold morning but I bundled up, went to help my buddy with his deck project and I was fine as long as I paced myself. Didn't need the rescue inhaler at all. Took my Spiriva this morning and my Advair morning and evening. Linda says I'm still snoring like a freight train though.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "Spiriva",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Advair",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Pacing yourself seems to be working well.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_977cb60f4e66"
+      },
+      "followup_answer": "Oh, the Advair is 250/50, same as always. Morning and evening, I don't miss it. And yeah, Linda records me snoring sometimes to prove how bad it is. I've always snored but she says it's getting worse. Could be the weight, could be the lungs, who knows.",
+      "followup_response": "Thanks for clarifying the Advair dosage and Linda's observations about your snoring. It's good to hear you managed the deck project without needing your rescue inhaler, but it sounds like the snoring is a concern for both of you.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Oh, the Advair is 250/50, same as always. Morning and evening, I don't miss it. And yeah, Linda records me snoring sometimes to prove how bad it is. I've always snored but she says it's getting worse. Could be the weight, could be the lungs, who knows.",
+          "agent_response": "Thanks for clarifying the Advair dosage and Linda's observations about your snoring. It's good to hear you managed the deck project without needing your rescue inhaler, but it sounds like the snoring is a concern for both of you.",
+          "answered_at": "2026-02-21T04:12:07.812028Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 7,
+      "week": 1,
+      "phase": null,
+      "transcript": "Coughing more today, woke up hacking at 5am. It's cold out, that always makes it worse. Took my Spiriva and Advair. The phlegm is still clear just there's more of it. Used my rescue inhaler once this morning already. Chest feels a little tight.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Coughing more today, woke up hacking at 5am. It's cold out, that always makes it worse. Took my Spiriva and Advair. The phlegm is still clear just there's more of it. Used my rescue inhaler once this morning already. Chest feels a little tight.",
+          "symptoms": [
+            {
+              "symptom": "coughing",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "woke up hacking at 5am",
+              "duration_text": "more today",
+              "triggers": [
+                "cold out"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "phlegm",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": "still there's more of it",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": [
+                "clear"
+              ]
+            },
+            {
+              "symptom": "chest tightness",
+              "location": "chest",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "Spiriva",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Advair",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "rescue inhaler",
+              "dose_text": "once",
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for the update, Frank. The cold weather is definitely triggering your COPD symptoms more today, with increased coughing and phlegm.",
+          "immediate_question": "Can you check your oxygen level with your pulse oximeter?",
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "asthma_respiratory_spo2_request",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": "Protocol: asthma_respiratory_protocol \u2014 asthma_respiratory_spo2_request",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_2c7d1c3879b3"
+      },
+      "followup_answer": "My oxygen? Hang on... 94. See? I'm fine. The tightness is barely a 3. Just a cold morning, it'll pass.",
+      "followup_response": "Thanks for checking your oxygen level, Frank. While 94% is within the normal range, it's on the lower end of what's typical, especially given your COPD and current symptoms like increased phlegm and chest tightness. It might be worth discussing this reading with your doctor to see if any adjustments are needed.",
+      "followup_exchanges": [
+        {
+          "question": "Can you check your oxygen level with your pulse oximeter?",
+          "answer": "My oxygen? Hang on... 94. See? I'm fine. The tightness is barely a 3. Just a cold morning, it'll pass.",
+          "agent_response": "Thanks for checking your oxygen level, Frank. While 94% is within the normal range, it's on the lower end of what's typical, especially given your COPD and current symptoms like increased phlegm and chest tightness. It might be worth discussing this reading with your doctor to see if any adjustments are needed.",
+          "answered_at": "2026-02-21T04:12:32.287353Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 10,
+      "week": 2,
+      "phase": "The cold that isn't just a cold",
+      "transcript": "So my wife Linda had a cold last week and I think I caught it. Nose is runny, throat's scratchy, coughing more than usual. Took all my inhalers. It's probably just a cold, I'll be fine.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "So my wife Linda had a cold last week and I think I caught it. Nose is runny, throat's scratchy, coughing more than usual. Took all my inhalers. It's probably just a cold, I'll be fine.",
+          "symptoms": [
+            {
+              "symptom": "runny nose",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "scratchy throat",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "coughing",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": "more than usual",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "inhalers",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for letting me know how you're feeling, Frank. You might have caught something from Linda.",
+          "immediate_question": "Can you check your oxygen level with your pulse oximeter?",
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "asthma_respiratory_spo2_request",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": "Protocol: asthma_respiratory_protocol \u2014 asthma_respiratory_spo2_request",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_f7ca06c4e4ff"
+      },
+      "followup_answer": "My oxygen? Hang on... 94. See? I'm fine. It's just a cold.",
+      "followup_response": "Thanks for checking your oxygen level, Frank. While 94% is within the normal range, it's on the lower end, especially considering your COPD and current symptoms. I recommend monitoring it again later today and discussing this reading with your doctor to see if it warrants any changes to your treatment plan.",
+      "followup_exchanges": [
+        {
+          "question": "Can you check your oxygen level with your pulse oximeter?",
+          "answer": "My oxygen? Hang on... 94. See? I'm fine. It's just a cold.",
+          "agent_response": "Thanks for checking your oxygen level, Frank. While 94% is within the normal range, it's on the lower end, especially considering your COPD and current symptoms. I recommend monitoring it again later today and discussing this reading with your doctor to see if it warrants any changes to your treatment plan.",
+          "answered_at": "2026-02-21T04:13:05.588009Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 12,
+      "week": 2,
+      "phase": null,
+      "transcript": "The cough is definitely worse. And the phlegm is thicker, kind of yellowish now instead of the usual clear stuff. Used my rescue inhaler twice already this morning and it's only 9. Walking from the bedroom to the kitchen and I'm a little winded which isn't normal for me indoors.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "The cough is definitely worse. And the phlegm is thicker, kind of yellowish now instead of the usual clear stuff. Used my rescue inhaler twice already this morning and it's only 9. Walking from the bedroom to the kitchen and I'm a little winded which isn't normal for me indoors.",
+          "symptoms": [
+            {
+              "symptom": "cough",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "phlegm",
+              "location": null,
+              "character": "thicker",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "phlegm",
+              "location": null,
+              "character": "yellowish",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "winded",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [
+                "walking from the bedroom to the kitchen"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "rescue inhaler",
+              "dose_text": "2 puffs",
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "I hear you, Frank. Your COPD symptoms are flaring up today with increased cough, thicker phlegm, and shortness of breath even with minimal activity.",
+          "immediate_question": "Can you check your oxygen level with your pulse oximeter?",
+          "scheduled_checkin": {
+            "id": "checkin_4243a9821664",
+            "user_id": "frank_russo",
+            "checkin_type": "symptom_progression",
+            "scheduled_for": "2026-02-21T06:13:36.789687",
+            "message": "Checking back on your breathing and sputum changes. If you develop fever, increased breathlessness, or feel worse, please contact a clinician promptly.",
+            "context": {
+              "hours": 2,
+              "transcript": "The cough is definitely worse. And the phlegm is thicker, kind of yellowish now instead of the usual clear stuff. Used my rescue inhaler twice already this morning and it's only 9. Walking from the be",
+              "protocol_id": "asthma_respiratory_protocol",
+              "reason_code": "asthma_respiratory_sputum_color_change",
+              "medication_name": "rescue inhaler"
+            },
+            "created_at": "2026-02-21T04:13:36.789691",
+            "triggered": false,
+            "dismissed": false,
+            "response": null,
+            "responded_at": null
+          },
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "asthma_respiratory_sputum_color_change",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": "Protocol: asthma_respiratory_protocol \u2014 asthma_respiratory_sputum_color_change",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "Because you're reporting a change in sputum color alongside respiratory symptoms, consider contacting a clinician promptly.",
+        "contact_clinician_reason": "asthma_respiratory_sputum_color_change",
+        "image_analysis": null,
+        "log_id": "log_31202ac61784"
+      },
+      "followup_answer": "My oxygen? Hang on... 93. That's still okay right?",
+      "followup_response": "Thanks for checking your oxygen level, Frank. An SpO2 of 93% is below the typical target range of 95-100%, especially for someone with COPD, so it's worth noting and discussing with your doctor. I appreciate you sharing that information.",
+      "followup_exchanges": [
+        {
+          "question": "Can you check your oxygen level with your pulse oximeter?",
+          "answer": "My oxygen? Hang on... 93. That's still okay right?",
+          "agent_response": "Thanks for checking your oxygen level, Frank. An SpO2 of 93% is below the typical target range of 95-100%, especially for someone with COPD, so it's worth noting and discussing with your doctor. I appreciate you sharing that information.",
+          "answered_at": "2026-02-21T04:13:36.818708Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 14,
+      "week": 2,
+      "phase": null,
+      "transcript": "Had to use the rescue inhaler I don't know, four or five times today. My chest is tight, like there's a band around it. The yellow phlegm keeps coming and I can't seem to clear it. I was supposed to help my buddy finish his deck but I couldn't imagine doing anything physical like this. Linda thinks I should call the doctor but I told her it's just a bad cold hanging on.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Had to use the rescue inhaler I don't know, four or five times today. My chest is tight, like there's a band around it. The yellow phlegm keeps coming and I can't seem to clear it. I was supposed to help my buddy finish his deck but I couldn't imagine doing anything physical like this. Linda thinks I should call the doctor but I told her it's just a bad cold hanging on.",
+          "symptoms": [
+            {
+              "symptom": "chest tightness",
+              "location": null,
+              "character": "like there's a band around it",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "phlegm",
+              "location": null,
+              "character": "yellow",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "rescue inhaler",
+              "dose_text": "4-5 times",
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "I've noted that you used your rescue inhaler multiple times today, are experiencing chest tightness, phlegm production, and shortness of breath impacting your activity level. I have scheduled a watchdog check for this situation.",
+          "immediate_question": "Can you check your oxygen level with your pulse oximeter?",
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "asthma_respiratory_sputum_color_change",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol",
+            "run_watchdog_now"
+          ],
+          "question_rationale": "Protocol: asthma_respiratory_protocol \u2014 asthma_respiratory_sputum_color_change",
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "run_watchdog_now"
+            ],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {
+              "run_watchdog_now": "scheduled (force=True)"
+            },
+            "replan": {
+              "original_acknowledgment": "I'm sorry to hear you're feeling so tight-chested and congested today, Frank. It sounds frustrating that this is keeping you from doing the things you planned.",
+              "revised_acknowledgment": "I've noted that you used your rescue inhaler multiple times today, are experiencing chest tightness, phlegm production, and shortness of breath impacting your activity level. I have scheduled a watchdog check for this situation.",
+              "revision_reason": "The original acknowledgment was too brief and didn't reflect the severity or specific details of Frank's symptoms. The revised acknowledgment summarizes the key points from his description (rescue inhaler use, chest tightness, phlegm, activity limitation) and explicitly states that a watchdog check has been scheduled based on these findings.",
+              "tool_results_seen": {
+                "run_watchdog_now": "scheduled (force=True)"
+              }
+            }
+          }
+        },
+        "contact_clinician_note": "Because you're reporting a change in sputum color alongside respiratory symptoms, consider contacting a clinician promptly.",
+        "contact_clinician_reason": "asthma_respiratory_sputum_color_change",
+        "image_analysis": null,
+        "log_id": "log_a151673ccadd"
+      },
+      "followup_answer": "A 7, easy. Maybe an 8. It's not just tight, it's like I can't get a full breath in. Hang on, let me check my oxygen... 92. That's lower than last time. Linda's right, maybe I should call the doctor.",
+      "followup_response": "Thanks for checking your oxygen level, Frank. An SpO2 of 92 is lower than the target range for someone with COPD and is definitely concerning, especially given how short of breath you feel. It's good that you're considering calling the doctor now; it might be a good idea to discuss this reading and your symptoms with them.",
+      "followup_exchanges": [
+        {
+          "question": "Can you check your oxygen level with your pulse oximeter?",
+          "answer": "A 7, easy. Maybe an 8. It's not just tight, it's like I can't get a full breath in. Hang on, let me check my oxygen... 92. That's lower than last time. Linda's right, maybe I should call the doctor.",
+          "agent_response": "Thanks for checking your oxygen level, Frank. An SpO2 of 92 is lower than the target range for someone with COPD and is definitely concerning, especially given how short of breath you feel. It's good that you're considering calling the doctor now; it might be a good idea to discuss this reading and your symptoms with them.",
+          "answered_at": "2026-02-21T04:14:11.378241Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 15,
+      "week": 3,
+      "phase": "It's not just a cold",
+      "transcript": "Barely slept. Up coughing every couple hours, my chest is killing me. Linda moved to the couch because I was keeping her up all night. The phlegm is green now. My rescue inhaler helps for maybe an hour then it's right back.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Barely slept. Up coughing every couple hours, my chest is killing me. Linda moved to the couch because I was keeping her up all night. The phlegm is green now. My rescue inhaler helps for maybe an hour then it's right back.",
+          "symptoms": [
+            {
+              "symptom": "coughing",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "every couple hours",
+              "duration_text": "all night",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "chest pain",
+              "location": "chest",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": "all night",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "phlegm",
+              "location": null,
+              "character": "green",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "difficulty sleeping",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": "all night",
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "rescue inhaler",
+              "dose_text": null,
+              "effect_text": "helps for maybe an hour"
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "I've scheduled a check-in for 4 hours to ask about your breathing and chest pain.",
+          "immediate_question": "Can you check your oxygen level with your pulse oximeter?",
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "asthma_respiratory_sputum_color_change",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol",
+            "run_watchdog_now",
+            "schedule_checkin:4:How is your breathing and chest pain now after using your rescue inhaler?"
+          ],
+          "question_rationale": "Protocol: asthma_respiratory_protocol \u2014 asthma_respiratory_sputum_color_change",
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "run_watchdog_now",
+              "schedule_checkin:4:How is your breathing and chest pain now after using your rescue inhaler?"
+            ],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol",
+              "legacy checkin suppressed \u2014 tool-based checkin takes priority"
+            ],
+            "tool_results": {
+              "run_watchdog_now": "scheduled (force=True)",
+              "schedule_checkin:4:How is your breathing and chest pain now after using your rescue inhaler?": "created checkin_845125932947"
+            },
+            "replan": {
+              "original_acknowledgment": "Frank, I'm sorry to hear you had a rough night with coughing, chest pain, and green phlegm. It sounds frustrating that the rescue inhaler only provides temporary relief.",
+              "revised_acknowledgment": "I've scheduled a check-in for 4 hours to ask about your breathing and chest pain.",
+              "revision_reason": "The tool `schedule_checkin:4:How is your breathing and chest pain now after using your rescue inhaler?` was executed, creating a check-in scheduled for 4 hours. The acknowledgment should reflect this action.",
+              "tool_results_seen": {
+                "run_watchdog_now": "scheduled (force=True)",
+                "schedule_checkin:4:How is your breathing and chest pain now after using your rescue inhaler?": "created checkin_845125932947"
+              }
+            }
+          }
+        },
+        "contact_clinician_note": "Because you're reporting a change in sputum color alongside respiratory symptoms, consider contacting a clinician promptly.",
+        "contact_clinician_reason": "asthma_respiratory_sputum_color_change",
+        "image_analysis": null,
+        "log_id": "log_cfa3a7bf6954"
+      },
+      "followup_answer": "Everything feels like a 7 right now. The cough, the breathing, the chest tightness. My oxygen? Let me check... 92. That bad? I'm going to call the doctor when the office opens at 8.",
+      "followup_response": "Thanks for checking your oxygen level, Frank. An SpO2 of 92 is below the typical target range of 93-95% for someone with COPD, so that's something to discuss with your doctor when you call them later today. I understand this feels like a significant change from usual for you.",
+      "followup_exchanges": [
+        {
+          "question": "Can you check your oxygen level with your pulse oximeter?",
+          "answer": "Everything feels like a 7 right now. The cough, the breathing, the chest tightness. My oxygen? Let me check... 92. That bad? I'm going to call the doctor when the office opens at 8.",
+          "agent_response": "Thanks for checking your oxygen level, Frank. An SpO2 of 92 is below the typical target range of 93-95% for someone with COPD, so that's something to discuss with your doctor when you call them later today. I understand this feels like a significant change from usual for you.",
+          "answered_at": "2026-02-21T04:14:48.904955Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 16,
+      "week": 3,
+      "phase": null,
+      "transcript": "Fever. 101.2. Took my temperature because I was sweating through my shirt. Still coughing up green stuff, my chest is so tight I can barely take a deep breath. I'm scared honestly. This is the worst my lungs have ever felt. Oxygen was 91. I called the doctor and I'm waiting for a callback.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Fever. 101.2. Took my temperature because I was sweating through my shirt. Still coughing up green stuff, my chest is so tight I can barely take a deep breath. I'm scared honestly. This is the worst my lungs have ever felt. Oxygen was 91. I called the doctor and I'm waiting for a callback.",
+          "symptoms": [
+            {
+              "symptom": "fever",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "coughing up green stuff",
+              "location": "chest",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "chest tightness",
+              "location": "chest",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": [
+                "difficulty taking a deep breath"
+              ]
+            },
+            {
+              "symptom": "sweating",
+              "location": "shirt",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "difficulty breathing",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [],
+          "vital_signs": [
+            {
+              "name": "temperature",
+              "value": "101.2",
+              "unit": "F"
+            },
+            {
+              "name": "spo2",
+              "value": "91",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Frank, I'm very sorry to hear you're feeling so unwell and scared. A difficult situation with the fever, green mucus, chest tightness, and low oxygen saturation. I have flagged this for your clinician due to the worsening trajectory.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": "fever_protocol",
+          "reason_code": "fever_with_respiratory_condition",
+          "safety_mode": "llm_protocol",
+          "tool_calls": [
+            "invoke_protocol:fever_protocol",
+            "run_watchdog_now",
+            "escalate_clinician_alert:worsening_trajectory"
+          ],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [
+              "invoke_protocol:fever_protocol",
+              "run_watchdog_now",
+              "escalate_clinician_alert:worsening_trajectory"
+            ],
+            "deterministic_actions": [],
+            "tool_results": {
+              "run_watchdog_now": "scheduled (force=True)",
+              "escalate_clinician_alert:worsening_trajectory": "already escalated by protocol"
+            },
+            "replan": {
+              "original_acknowledgment": "Frank, I'm very sorry to hear you're feeling so unwell and scared. A really difficult situation with the fever, green mucus, chest tightness, and low oxygen saturation.",
+              "revised_acknowledgment": "Frank, I'm very sorry to hear you're feeling so unwell and scared. A difficult situation with the fever, green mucus, chest tightness, and low oxygen saturation. I have flagged this for your clinician due to the worsening trajectory.",
+              "revision_reason": "Acknowledged the patient's distress and symptoms as before. Added information about the action taken (escalating the alert) based on the tool execution results.",
+              "tool_results_seen": {
+                "run_watchdog_now": "scheduled (force=True)",
+                "escalate_clinician_alert:worsening_trajectory": "already escalated by protocol"
+              }
+            }
+          }
+        },
+        "contact_clinician_note": "Because you have a fever alongside a respiratory condition, consider contacting a clinician promptly.",
+        "contact_clinician_reason": "fever_with_respiratory_condition",
+        "image_analysis": null,
+        "log_id": "log_e44a59df3114"
+      },
+      "followup_answer": "The breathing? It's bad, like an 8. I can barely take a deep breath, my chest is so tight. And I've got a fever \u2014 101.2 on the thermometer. I never get fevers, that's what scared me. The doctor's office said they'd call me back within the hour. Linda wants to take me to the ER but I told her let's wait for the callback.",
+      "followup_response": "Thanks for sharing those details, Frank. You're experiencing significant difficulty breathing and chest tightness, which is understandably frightening, especially with the fever and low oxygen saturation reading of 91. I've noted the fever of 101.2\u00b0F and the reported SpO2 level; it's good that you're waiting for a callback from the doctor to discuss these findings.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "The breathing? It's bad, like an 8. I can barely take a deep breath, my chest is so tight. And I've got a fever \u2014 101.2 on the thermometer. I never get fevers, that's what scared me. The doctor's office said they'd call me back within the hour. Linda wants to take me to the ER but I told her let's wait for the callback.",
+          "agent_response": "Thanks for sharing those details, Frank. You're experiencing significant difficulty breathing and chest tightness, which is understandably frightening, especially with the fever and low oxygen saturation reading of 91. I've noted the fever of 101.2\u00b0F and the reported SpO2 level; it's good that you're waiting for a callback from the doctor to discuss these findings.",
+          "answered_at": "2026-02-21T04:15:35.931289Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 17,
+      "week": 3,
+      "phase": null,
+      "transcript": "I can't... I can't catch my breath. I walked to the bathroom and I was gasping. The rescue inhaler isn't doing anything. Oxygen was 88. Maria came over and she's taking me to the ER right now. I'm scared.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "I can't... I can't catch my breath. I walked to the bathroom and I was gasping. The rescue inhaler isn't doing anything. Oxygen was 88. Maria came over and she's taking me to the ER right now. I'm scared.",
+          "symptoms": [
+            {
+              "symptom": "can't catch my breath",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [
+                "walking to the bathroom"
+              ],
+              "relievers": [
+                "rescue inhaler"
+              ],
+              "associated_symptoms": [
+                "gasping"
+              ]
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "rescue inhaler",
+              "dose_text": null,
+              "effect_text": "isn't doing anything"
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "88",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": [
+            "difficulty breathing",
+            "can't breathe"
+          ]
+        },
+        "agent_response": {
+          "acknowledgment": "I hear you, Frank. You're doing the right thing getting to care. The medical team will take it from here.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": "red_flag_static",
+          "reason_code": "red_flags_detected",
+          "safety_mode": "static_safety",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "Significant breathing difficulty warrants prompt medical evaluation.",
+        "contact_clinician_reason": "red_flags_detected",
+        "image_analysis": null,
+        "log_id": "log_c48fb375d216"
+      },
+      "followup_answer": "Maria is driving. I can barely talk. We're going now.",
+      "followup_response": "Significant breathing difficulty warrants prompt medical evaluation.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Maria is driving. I can barely talk. We're going now.",
+          "agent_response": "Significant breathing difficulty warrants prompt medical evaluation.",
+          "answered_at": "2026-02-21T04:16:06.013379Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 18,
+      "week": 3,
+      "phase": null,
+      "transcript": "Back from the hospital. I ended up staying overnight \u2014 they put me in observation. Nebulizer every few hours and IV steroids. My oxygen was 88 when I got there, came up to 93 on room air by this morning. They wanted to keep me another night but I told them I rest better in my own bed. Sent me home with prednisone and a Z-pack.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Back from the hospital. I ended up staying overnight \u2014 they put me in observation. Nebulizer every few hours and IV steroids. My oxygen was 88 when I got there, came up to 93 on room air by this morning. They wanted to keep me another night but I told them I rest better in my own bed. Sent me home with prednisone and a Z-pack.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "prednisone",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Z-pack",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "88",
+              "unit": "%"
+            },
+            {
+              "name": "oxygen saturation",
+              "value": "93",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Glad to hear you're back home, Frank. That was a tough night in the hospital with your oxygen levels dropping.",
+          "immediate_question": "What dose of prednisone did you take?",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_missing_dose_priority",
+          "reason_code": "medication_missing_dose",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:medication_missing_dose_priority"
+          ],
+          "question_rationale": "Protocol: medication_missing_dose_priority \u2014 medication_missing_dose",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 medication_missing_dose_priority"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_000a09ecd5f8"
+      },
+      "followup_answer": "The prednisone is... let me look at the bottle... 40mg, once a day, five days. And the Z-pack says 500 the first day then 250 for the next four. That's the whole stack of pills right there.",
+      "followup_response": "Okay, thanks for confirming the prednisone dose and the Z-pack schedule. That's a standard course for an acute exacerbation. I see you were prescribed 40mg of prednisone daily for five days, which is common for managing COPD flare-ups, but it can also affect blood pressure, especially since you already take lisinopril for hypertension; keep an eye on that.",
+      "followup_exchanges": [
+        {
+          "question": "What dose of prednisone did you take?",
+          "answer": "The prednisone is... let me look at the bottle... 40mg, once a day, five days. And the Z-pack says 500 the first day then 250 for the next four. That's the whole stack of pills right there.",
+          "agent_response": "Okay, thanks for confirming the prednisone dose and the Z-pack schedule. That's a standard course for an acute exacerbation. I see you were prescribed 40mg of prednisone daily for five days, which is common for managing COPD flare-ups, but it can also affect blood pressure, especially since you already take lisinopril for hypertension; keep an eye on that.",
+          "answered_at": "2026-02-21T04:16:26.671625Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 19,
+      "week": 3,
+      "phase": null,
+      "transcript": "The prednisone has me wired. Barely slept, staring at the ceiling at 3am. My face feels hot and my head is pounding a little. But I can breathe better, that's the main thing. Oxygen is 93 on room air. Still coughing but it doesn't feel as desperate as yesterday. Took all my regular inhalers plus the prednisone and the Z-pack.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "The prednisone has me wired. Barely slept, staring at the ceiling at 3am. My face feels hot and my head is pounding a little. But I can breathe better, that's the main thing. Oxygen is 93 on room air. Still coughing but it doesn't feel as desperate as yesterday. Took all my regular inhalers plus the prednisone and the Z-pack.",
+          "symptoms": [
+            {
+              "symptom": "wired",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "difficulty sleeping",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": "3am",
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "hot face",
+              "location": "face",
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "headache",
+              "location": "head",
+              "character": "pounding",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "coughing",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "prednisone",
+              "dose_text": null,
+              "effect_text": "wired"
+            },
+            {
+              "name": "inhalers",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Z-pack",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "93",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Thanks for the update, Frank. The prednisone is helping with your breathing but causing some side effects like trouble sleeping and feeling hot.",
+          "immediate_question": "Corticosteroids like prednisone can sometimes affect blood pressure. Can you check your BP and let me know the reading?",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_interaction",
+          "reason_code": "corticosteroid_htn_bp_request",
+          "safety_mode": "safety_override",
+          "tool_calls": [
+            "invoke_protocol:medication_interaction"
+          ],
+          "question_rationale": "Safety override: medication_interaction \u2014 corticosteroid_htn_bp_request",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 medication_interaction"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "Corticosteroids can affect blood pressure \u2014 worth monitoring closely and discussing with your clinician.",
+        "contact_clinician_reason": "corticosteroid_htn_bp_request",
+        "image_analysis": null,
+        "log_id": "log_e96ef034ecc1"
+      },
+      "followup_answer": "My blood pressure? Hang on... 158 over 95. That's higher than usual, right? It's normally like 130 something. I literally did not sleep though. Heart's racing, face is flushed. Whatever, probably just the steroids making me nuts.",
+      "followup_response": "Thanks for checking your blood pressure, Frank. 158 over 95 is elevated, especially given your history of hypertension and current use of prednisone, which can also raise BP. It's good to be aware of this, so keep an eye on it and mention it to your doctor if it stays high or makes you feel unwell.",
+      "followup_exchanges": [
+        {
+          "question": "Corticosteroids like prednisone can sometimes affect blood pressure. Can you check your BP and let me know the reading?",
+          "answer": "My blood pressure? Hang on... 158 over 95. That's higher than usual, right? It's normally like 130 something. I literally did not sleep though. Heart's racing, face is flushed. Whatever, probably just the steroids making me nuts.",
+          "agent_response": "Thanks for checking your blood pressure, Frank. 158 over 95 is elevated, especially given your history of hypertension and current use of prednisone, which can also raise BP. It's good to be aware of this, so keep an eye on it and mention it to your doctor if it stays high or makes you feel unwell.",
+          "answered_at": "2026-02-21T04:16:58.958392Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 21,
+      "week": 3,
+      "phase": null,
+      "transcript": "Day 4 of the prednisone. Still a little wired but sleeping better than the first couple nights. Breathing is better each day. Oxygen was 94 this morning. Finished the Z-pack today, last pill. The cough is still there but it's more like my normal cough now, less of the green stuff.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Day 4 of the prednisone. Still a little wired but sleeping better than the first couple nights. Breathing is better each day. Oxygen was 94 this morning. Finished the Z-pack today, last pill. The cough is still there but it's more like my normal cough now, less of the green stuff.",
+          "symptoms": [
+            {
+              "symptom": "wired",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "cough",
+              "location": null,
+              "character": "normal cough",
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": [
+                "less of the green stuff"
+              ]
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "prednisone",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Z-pack",
+              "dose_text": null,
+              "effect_text": "finished"
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "94",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "It's good to hear that your breathing is improving and you're sleeping better after four days on prednisone and finishing the Z-pack. Things are trending in the right direction.",
+          "immediate_question": "Corticosteroids like prednisone can sometimes affect blood pressure. Can you check your BP and let me know the reading?",
+          "scheduled_checkin": null,
+          "protocol_id": "medication_interaction",
+          "reason_code": "corticosteroid_htn_bp_request",
+          "safety_mode": "safety_override",
+          "tool_calls": [
+            "invoke_protocol:medication_interaction"
+          ],
+          "question_rationale": "Safety override: medication_interaction \u2014 corticosteroid_htn_bp_request",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 medication_interaction"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": "Corticosteroids can affect blood pressure \u2014 worth monitoring closely and discussing with your clinician.",
+        "contact_clinician_reason": "corticosteroid_htn_bp_request",
+        "image_analysis": null,
+        "log_id": "log_d2f9668070df"
+      },
+      "followup_answer": "My blood pressure? Lemme check... 145 over 90. Still a little high I guess but better than the 158 the other day. The green phlegm is mostly gone, breathing is maybe a 3 now. Big improvement from last week.",
+      "followup_response": "Thanks for checking your blood pressure, Frank. 145 over 90 is still elevated, especially given your history of hypertension and current prednisone use, which can also raise BP. It's good to see it's improved from the other day, but keep an eye on it and mention it to your doctor if it stays consistently high.",
+      "followup_exchanges": [
+        {
+          "question": "Corticosteroids like prednisone can sometimes affect blood pressure. Can you check your BP and let me know the reading?",
+          "answer": "My blood pressure? Lemme check... 145 over 90. Still a little high I guess but better than the 158 the other day. The green phlegm is mostly gone, breathing is maybe a 3 now. Big improvement from last week.",
+          "agent_response": "Thanks for checking your blood pressure, Frank. 145 over 90 is still elevated, especially given your history of hypertension and current prednisone use, which can also raise BP. It's good to see it's improved from the other day, but keep an eye on it and mention it to your doctor if it stays consistently high.",
+          "answered_at": "2026-02-21T04:17:39.558600Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 24,
+      "week": 4,
+      "phase": "Recovery \u2014 the hard part",
+      "transcript": "Finished the prednisone yesterday. Finally sleeping again, thank god. But I'm wiped out. Tried to walk to the mailbox and back and I was winded. The mailbox is like 50 feet. I used to frame houses for a living. Oxygen is 94.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Finished the prednisone yesterday. Finally sleeping again, thank god. But I'm wiped out. Tried to walk to the mailbox and back and I was winded. The mailbox is like 50 feet. I used to frame houses for a living. Oxygen is 94.",
+          "symptoms": [
+            {
+              "symptom": "wiped out",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [
+                "walking to the mailbox and back"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            },
+            {
+              "symptom": "winded",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [
+                "walking to the mailbox and back"
+              ],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "prednisone",
+              "dose_text": null,
+              "effect_text": "finished"
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "94",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "I'm glad to hear the prednisone helped you sleep better, Frank. It's frustrating that you're still feeling wiped out and winded even after finishing the course.",
+          "immediate_question": "How bad is the wiped out (1-10)? Have you used your rescue inhaler today?",
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "asthma_respiratory_missing_severity",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": "Protocol: asthma_respiratory_protocol \u2014 asthma_respiratory_missing_severity",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_1af579e95263"
+      },
+      "followup_answer": "The wiped out feeling is maybe a 6 \u2014 my legs feel like jello just walking around the yard. Didn't need the rescue inhaler yesterday though, so that's something. The breathing is a 4 maybe, close to my usual but not quite. I'm just weaker than before this whole thing started. Is that normal after being that sick?",
+      "followup_response": "Thanks for sharing that, Frank. It's understandable to feel frustrated being weaker than usual after being sick, even though your breathing is closer to baseline and you didn't need your rescue inhaler yesterday. I appreciate you noting the change in your energy levels; it's good information to have.",
+      "followup_exchanges": [
+        {
+          "question": "How bad is the wiped out (1-10)? Have you used your rescue inhaler today?",
+          "answer": "The wiped out feeling is maybe a 6 \u2014 my legs feel like jello just walking around the yard. Didn't need the rescue inhaler yesterday though, so that's something. The breathing is a 4 maybe, close to my usual but not quite. I'm just weaker than before this whole thing started. Is that normal after being that sick?",
+          "agent_response": "Thanks for sharing that, Frank. It's understandable to feel frustrated being weaker than usual after being sick, even though your breathing is closer to baseline and you didn't need your rescue inhaler yesterday. I appreciate you noting the change in your energy levels; it's good information to have.",
+          "answered_at": "2026-02-21T04:18:14.683998Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 27,
+      "week": 4,
+      "phase": null,
+      "transcript": "The doctor called yesterday about my follow-up. He said every exacerbation does permanent damage to my lungs. Like I'm not getting back what I lost this time. He wants me to do pulmonary rehab three times a week and he brought up quitting smoking again. I know he's right about the smoking. I know. I just... one thing at a time, okay?",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "The doctor called yesterday about my follow-up. He said every exacerbation does permanent damage to my lungs. Like I'm not getting back what I lost this time. He wants me to do pulmonary rehab three times a week and he brought up quitting smoking again. I know he's right about the smoking. I know. I just... one thing at a time, okay?",
+          "symptoms": [],
+          "actions_taken": [],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Okay, Frank. You're feeling overwhelmed with the doctor's recommendations about pulmonary rehab and quitting smoking after your recent exacerbation. I understand wanting to take things one step at a time. Your oxygen saturation has been trending upwards over the past few logs, which is positive, but it remains below 95% in some readings. Your blood pressure has also been elevated recently.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_271d849a2dd7"
+      },
+      "followup_answer": "Maybe a 3 these days? On flat ground I'm mostly okay, it's the stairs and hills that still get me. Oxygen was 95 this morning though. But yeah, the doctor said my lung function probably dropped a few percent from this episode and it won't come back. The rehab is supposed to help me make the most of what I've got. And the smoking \u2014 I'm down to about half a pack from two packs a day 15 years ago. I'm trying.",
+      "followup_response": "Thanks for sharing that, Frank. You're feeling a bit better day-to-day on flat ground, but still struggling with exertion, which is understandable given what the doctor said about permanent damage from exacerbations. I appreciate you being open about the smoking too; it's clearly a tough habit to break.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Maybe a 3 these days? On flat ground I'm mostly okay, it's the stairs and hills that still get me. Oxygen was 95 this morning though. But yeah, the doctor said my lung function probably dropped a few percent from this episode and it won't come back. The rehab is supposed to help me make the most of what I've got. And the smoking \u2014 I'm down to about half a pack from two packs a day 15 years ago. I'm trying.",
+          "agent_response": "Thanks for sharing that, Frank. You're feeling a bit better day-to-day on flat ground, but still struggling with exertion, which is understandable given what the doctor said about permanent damage from exacerbations. I appreciate you being open about the smoking too; it's clearly a tough habit to break.",
+          "answered_at": "2026-02-21T04:18:38.850265Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 30,
+      "week": 5,
+      "phase": "New normal",
+      "transcript": "Morning. Oxygen 95, cough is back to my usual morning routine. Clear phlegm, normal amount. Took my Spiriva and Advair. Didn't need the rescue inhaler yesterday at all. I think I'm back to baseline, whatever that means when your baseline isn't great.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Morning. Oxygen 95, cough is back to my usual morning routine. Clear phlegm, normal amount. Took my Spiriva and Advair. Didn't need the rescue inhaler yesterday at all. I think I'm back to baseline, whatever that means when your baseline isn't great.",
+          "symptoms": [
+            {
+              "symptom": "cough",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": [
+                "clear phlegm"
+              ]
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "Spiriva",
+              "dose_text": null,
+              "effect_text": null
+            },
+            {
+              "name": "Advair",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "95",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Good morning, Frank. You're feeling closer to your baseline today, which is good news after the recent changes. The oxygen saturation is stable.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "baseline_respiratory_suppressed",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_aaf7c9ee205d"
+      },
+      "followup_answer": "Yeah, I feel like myself again. Which is a guy with COPD who gets winded on stairs and coughs every morning. But at least I'm not gasping walking to the bathroom. Low bar I guess.",
+      "followup_response": "Thanks for sharing that, Frank. It seems like you're feeling more like your usual self despite the ongoing COPD symptoms, which is good to hear. I understand it can be frustrating when \"baseline\" isn't ideal, but at least you've moved past the gasping stage.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Yeah, I feel like myself again. Which is a guy with COPD who gets winded on stairs and coughs every morning. But at least I'm not gasping walking to the bathroom. Low bar I guess.",
+          "agent_response": "Thanks for sharing that, Frank. It seems like you're feeling more like your usual self despite the ongoing COPD symptoms, which is good to hear. I understand it can be frustrating when \"baseline\" isn't ideal, but at least you've moved past the gasping stage.",
+          "answered_at": "2026-02-21T04:18:59.747275Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 33,
+      "week": 5,
+      "phase": null,
+      "transcript": "Started pulmonary rehab today. Three times a week at the hospital outpatient clinic. They had me on a treadmill and doing breathing exercises. I was the youngest one there at 61 and probably the most winded, that was humbling. But the therapist said my lungs can actually do more than I think if I train them right.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Started pulmonary rehab today. Three times a week at the hospital outpatient clinic. They had me on a treadmill and doing breathing exercises. I was the youngest one there at 61 and probably the most winded, that was humbling. But the therapist said my lungs can actually do more than I think if I train them right.",
+          "symptoms": [],
+          "actions_taken": [],
+          "vital_signs": [],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "A challenging but potentially very rewarding experience. Your oxygen saturation has shown improvement over the past few logs, trending upwards from 88% to 94%.",
+          "immediate_question": "How did your breathing feel during and after the pulmonary rehab session today?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "Patient started a new therapy (pulmonary rehab). Asking about their experience provides valuable information on its immediate impact and helps gauge their response to exertion.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_b9a070a05eaf"
+      },
+      "followup_answer": "It wasn't as bad as I expected honestly. The breathing exercises are kind of weird, pursed lip breathing and diaphragmatic stuff, but the therapist says if I do them consistently it'll help with the breathlessness. We'll see.",
+      "followup_response": "Thanks for sharing that, Frank. It's good to hear the session wasn't as bad as you anticipated, even if the breathing exercises feel a bit strange right now. Hopefully, consistency will pay off and help manage the breathlessness as your therapist suggested.",
+      "followup_exchanges": [
+        {
+          "question": "How did your breathing feel during and after the pulmonary rehab session today?",
+          "answer": "It wasn't as bad as I expected honestly. The breathing exercises are kind of weird, pursed lip breathing and diaphragmatic stuff, but the therapist says if I do them consistently it'll help with the breathlessness. We'll see.",
+          "agent_response": "Thanks for sharing that, Frank. It's good to hear the session wasn't as bad as you anticipated, even if the breathing exercises feel a bit strange right now. Hopefully, consistency will pay off and help manage the breathlessness as your therapist suggested.",
+          "answered_at": "2026-02-21T04:19:20.854295Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 36,
+      "week": 6,
+      "phase": null,
+      "transcript": "Maria sat me down last night and asked me to really try to quit. She was crying. She said watching me in the ER not being able to breathe scared her more than anything in her life. I'm down to maybe 4 or 5 cigarettes a day now, from about 10 before all this happened. I bought the nicotine patches yesterday but I haven't started them yet.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Maria sat me down last night and asked me to really try to quit. She was crying. She said watching me in the ER not being able to breathe scared her more than anything in her life. I'm down to maybe 4 or 5 cigarettes a day now, from about 10 before all this happened. I bought the nicotine patches yesterday but I haven't started them yet.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "nicotine patches",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [],
+          "missing_fields": [
+            "dose"
+          ],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Frank, it sounds like you're making a big effort to quit smoking for Maria, and that conversation was clearly very impactful. That takes courage.",
+          "immediate_question": "You mentioned buying nicotine patches yesterday but haven't started them yet. Are you planning on starting them today?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "Patient reports a behavior change (attempting to quit smoking) and mentions purchasing aids (nicotine patches) but not using them. Follow up is needed to understand the plan for utilizing these aids.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_63d150dbfe79"
+      },
+      "followup_answer": "I haven't started them yet, bought them yesterday. I'm planning to start this weekend. Forty-plus years of smoking \u2014 every doctor has told me to quit. But Maria crying like that... that hit different than any statistic. I'm going to do it this time.",
+      "followup_response": "That's a significant change, Frank, and it's powerful how Maria's reaction motivated you after so many years of smoking and previous advice. It takes real strength to commit to quitting, especially after forty years, and I hope starting the patches this weekend goes well for you.",
+      "followup_exchanges": [
+        {
+          "question": "You mentioned buying nicotine patches yesterday but haven't started them yet. Are you planning on starting them today?",
+          "answer": "I haven't started them yet, bought them yesterday. I'm planning to start this weekend. Forty-plus years of smoking \u2014 every doctor has told me to quit. But Maria crying like that... that hit different than any statistic. I'm going to do it this time.",
+          "agent_response": "That's a significant change, Frank, and it's powerful how Maria's reaction motivated you after so many years of smoking and previous advice. It takes real strength to commit to quitting, especially after forty years, and I hope starting the patches this weekend goes well for you.",
+          "answered_at": "2026-02-21T04:19:37.121838Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 38,
+      "week": 6,
+      "phase": null,
+      "transcript": "Second week of pulmonary rehab. I can actually walk further on the treadmill now before I need to stop, so something is working. Oxygen was 96 today which the therapist said was great. Still smoking 3 or 4 a day but I started the nicotine patches and it's helping with the cravings a little. It's a process.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Second week of pulmonary rehab. I can actually walk further on the treadmill now before I need to stop, so something is working. Oxygen was 96 today which the therapist said was great. Still smoking 3 or 4 a day but I started the nicotine patches and it's helping with the cravings a little. It's a process.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "nicotine patches",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "96",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Something is definitely working for you. And 96% oxygen saturation is a good sign.",
+          "immediate_question": "How are the nicotine patches helping with cravings overall?",
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "llm_fallback",
+          "tool_calls": [],
+          "question_rationale": "Patient reports starting nicotine patches and experiencing some help with cravings. It's important to follow up on this behavior change to assess efficacy and potential side effects.",
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_03a6a704ab22"
+      },
+      "followup_answer": "Just the one patch a day, 21 milligram. You change it every morning. Day three now \u2014 the cravings are manageable. Had two cigarettes yesterday, which is way down from my usual half pack. Maria hid my regular pack and I'm letting her. The breathing exercises from rehab actually help when a craving hits \u2014 the pursed lip thing. Never thought I'd say breathing exercises work but here we are.",
+      "followup_response": "That's good to hear the nicotine patches are helping make the cravings manageable, and cutting down from half a pack to two cigarettes is definitely progress. It's great that Maria is supporting you by hiding your regular pack, and it sounds like the breathing exercises are providing some helpful relief too. Keep up the work on managing those cravings.",
+      "followup_exchanges": [
+        {
+          "question": "How are the nicotine patches helping with cravings overall?",
+          "answer": "Just the one patch a day, 21 milligram. You change it every morning. Day three now \u2014 the cravings are manageable. Had two cigarettes yesterday, which is way down from my usual half pack. Maria hid my regular pack and I'm letting her. The breathing exercises from rehab actually help when a craving hits \u2014 the pursed lip thing. Never thought I'd say breathing exercises work but here we are.",
+          "agent_response": "That's good to hear the nicotine patches are helping make the cravings manageable, and cutting down from half a pack to two cigarettes is definitely progress. It's great that Maria is supporting you by hiding your regular pack, and it sounds like the breathing exercises are providing some helpful relief too. Keep up the work on managing those cravings.",
+          "answered_at": "2026-02-21T04:19:52.688200Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 40,
+      "week": 6,
+      "phase": null,
+      "transcript": "Good morning. Oxygen 95, cough is my usual deal, nothing weird. Took everything on time. I'm still doing the rehab and it's helping, I can tell because the stairs at the clinic don't kill me like they did the first day. Still smoking a couple a day with the patches. Linda says trying counts. I told her I'm trying.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Good morning. Oxygen 95, cough is my usual deal, nothing weird. Took everything on time. I'm still doing the rehab and it's helping, I can tell because the stairs at the clinic don't kill me like they did the first day. Still smoking a couple a day with the patches. Linda says trying counts. I told her I'm trying.",
+          "symptoms": [
+            {
+              "symptom": "cough",
+              "location": null,
+              "character": null,
+              "severity_1_10": null,
+              "onset_time_text": null,
+              "duration_text": null,
+              "triggers": [],
+              "relievers": [],
+              "associated_symptoms": []
+            }
+          ],
+          "actions_taken": [
+            {
+              "name": "patches",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "95",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "Good morning Frank. You're managing your usual cough and that the rehab is making a difference with the stairs, which is great to hear.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": "asthma_respiratory_protocol",
+          "reason_code": "baseline_respiratory_suppressed",
+          "safety_mode": "protocol",
+          "tool_calls": [
+            "invoke_protocol:asthma_respiratory_protocol"
+          ],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [
+              "safety override: protocol None \u2192 asthma_respiratory_protocol"
+            ],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_94538eec0188"
+      },
+      "followup_answer": "Nah, the phlegm is back to my usual clear stuff, normal amount. Morning cough and that's it. Honestly I feel better than I have in months. Whether that's the rehab or just recovering from the exacerbation or the patches helping or all of it, I don't know. I'm just trying not to end up back in that ER.",
+      "followup_response": "Thanks for sharing that, Frank. It's good to hear you feel better than you have in months and are noticing improvements with rehab, even if it's hard to pinpoint exactly what's helping. I appreciate you being honest about still smoking while using patches; Linda sounds supportive.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Nah, the phlegm is back to my usual clear stuff, normal amount. Morning cough and that's it. Honestly I feel better than I have in months. Whether that's the rehab or just recovering from the exacerbation or the patches helping or all of it, I don't know. I'm just trying not to end up back in that ER.",
+          "agent_response": "Thanks for sharing that, Frank. It's good to hear you feel better than you have in months and are noticing improvements with rehab, even if it's hard to pinpoint exactly what's helping. I appreciate you being honest about still smoking while using patches; Linda sounds supportive.",
+          "answered_at": "2026-02-21T04:20:10.872893Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    },
+    {
+      "day": 42,
+      "week": 6,
+      "phase": null,
+      "transcript": "Doctor appointment tomorrow. Feeling pretty good, oxygen is 95. Took everything on time. Honestly a little nervous \u2014 first time I'll have real numbers to show instead of just saying I'll try harder.",
+      "expected_protocol": null,
+      "expected_action": null,
+      "actual_response": {
+        "extracted": {
+          "transcript": "Doctor appointment tomorrow. Feeling pretty good, oxygen is 95. Took everything on time. Honestly a little nervous \u2014 first time I'll have real numbers to show instead of just saying I'll try harder.",
+          "symptoms": [],
+          "actions_taken": [
+            {
+              "name": "medication",
+              "dose_text": null,
+              "effect_text": null
+            }
+          ],
+          "vital_signs": [
+            {
+              "name": "oxygen saturation",
+              "value": "95",
+              "unit": "%"
+            }
+          ],
+          "missing_fields": [],
+          "red_flags": []
+        },
+        "agent_response": {
+          "acknowledgment": "It's great to hear you're feeling better and your oxygen saturation is up to 95%. You've been proactive about managing things, and it's understandable to feel a bit nervous before showing the doctor real numbers \u2013 that shows you're engaged in your care.",
+          "immediate_question": null,
+          "scheduled_checkin": null,
+          "protocol_id": null,
+          "reason_code": "no_protocol_match",
+          "safety_mode": "protocol",
+          "tool_calls": [],
+          "question_rationale": null,
+          "agent_trace": {
+            "llm_proposed_tools": [],
+            "deterministic_actions": [],
+            "tool_results": {}
+          }
+        },
+        "contact_clinician_note": null,
+        "contact_clinician_reason": null,
+        "image_analysis": null,
+        "log_id": "log_04e250187659"
+      },
+      "followup_answer": "Yeah, I'm actually looking forward to it for once. Six weeks of real data instead of excuses. The oxygen numbers, the rehab, the smoking. Maria says she's coming with me for moral support.",
+      "followup_response": "Thanks for sharing that, Frank. It's good to hear you're feeling more positive about tomorrow's appointment and having concrete data to share after six weeks of effort. Having Maria there for support sounds helpful too.",
+      "followup_exchanges": [
+        {
+          "question": "Is there anything else you'd like to share about how you're feeling?",
+          "answer": "Yeah, I'm actually looking forward to it for once. Six weeks of real data instead of excuses. The oxygen numbers, the rehab, the smoking. Maria says she's coming with me for moral support.",
+          "agent_response": "Thanks for sharing that, Frank. It's good to hear you're feeling more positive about tomorrow's appointment and having concrete data to share after six weeks of effort. Having Maria there for support sounds helpful too.",
+          "answered_at": "2026-02-21T04:20:31.991758Z"
+        }
+      ],
+      "degraded_mode": false,
+      "warnings": []
+    }
+  ],
+  "doctor_packet": {
+    "hpi": "A 61-year-old male with known COPD presents with a history of worsening respiratory symptoms over the past several days. The onset began around January 20, 2026, initially manifesting as increased shortness of breath and cough compared to his baseline. He takes Spiriva 18 micrograms daily, Advair 250/50 twice daily, and uses a rescue inhaler as needed. Around January 20th, he noticed needing his rescue inhaler more frequently, up to 4-5 times per day, which was significantly higher than usual. His cough became more productive, with initially yellow sputum that progressed to green sputum by January 22nd. He also developed a fever of 101.2\u00b0F and started sweating. The dyspnea worsened significantly, becoming severe (rated 8/10) even with minimal exertion like walking across the room or going up stairs. Chest tightness was also prominent, rated around 7/10. These symptoms were constant throughout the day and night, disrupting his sleep due to coughing spells every couple of hours. The severity progressed rapidly over 3-4 days, culminating in severe dyspnea unresponsive to his rescue inhaler on January 23rd, associated with hypoxemia (SpO2 88% on room air), leading to an emergency department visit and hospitalization. He was treated with nebulized medications and IV steroids in the hospital. Following discharge, he started pulmonary rehabilitation but continues to experience significant exertional dyspnea and fatigue, limiting his ability to perform daily activities like helping a friend with a deck project without needing to pace himself significantly.",
+    "pertinent_positives": [
+      "Increased rescue inhaler use (up to 5 times/day)",
+      "Productive cough",
+      "Sputum change from yellow to green",
+      "Fever (101.2\u00b0F)",
+      "Sweating",
+      "Severe dyspnea (8/10) with minimal exertion",
+      "Chest tightness (7/10)",
+      "Nocturnal cough",
+      "Hypoxemia (SpO2 88% on room air)",
+      "Hospitalization required",
+      "Treatment with nebulizers and IV steroids",
+      "Persistent exertional dyspnea and fatigue post-hospitalization",
+      "Medications: Spiriva 18 micrograms daily, Advair 250/50 twice daily, rescue inhaler PRN"
+    ],
+    "pertinent_negatives": [],
+    "timeline_bullets": [
+      "2026-02-19: medication",
+      "2026-02-17: cough; phlegm; patches; rehab",
+      "2026-02-15: nicotine patches 21 milligram",
+      "2026-02-13: nicotine patches",
+      "2026-02-10: breathlessness",
+      "2026-02-07: cough; gets winded on stairs; Spiriva; Advair",
+      "2026-02-04: shortness of breath (3/10)",
+      "2026-02-01: wiped out feeling (6/10); weakness; breathing (4/10); winded; prednisone",
+      "2026-01-29: wired; cough; breathing (3/10); green phlegm; blood pressure; prednisone; Z-pack",
+      "2026-01-27: wired; difficulty sleeping; hot face; headache; coughing; racing heart; flushed face; prednisone; Z-pack; inhalers",
+      "2026-01-26: prednisone 40mg; Z-pack 500mg; Z-pack 250mg",
+      "2026-01-25: can't catch my breath; gasping; rescue inhaler; RED FLAG: difficulty breathing",
+      "2026-01-24: fever; coughing up green stuff; tight chest; difficulty breathing (8/10); sweating; RED FLAG: difficulty breathing, tight chest",
+      "2026-01-23: cough (7/10); chest pain (7/10); breathing difficulty (7/10); chest tightness (7/10); phlegm; poor sleep; rescue inhaler",
+      "2026-01-22: chest tightness (7/10); phlegm; difficulty breathing (8/10); rescue inhaler 4-5 times; RED FLAG: difficulty breathing, chest tightness",
+      "2026-01-20: cough; phlegm; phlegm color; winded; rescue inhaler 2 puffs",
+      "2026-01-18: runny nose; scratchy throat; coughing; inhalers",
+      "2026-01-15: coughing; hacking; phlegm; chest tightness (3/10); Spiriva; Advair; rescue inhaler 1 puff",
+      "2026-01-13: Spiriva; Advair 250/50",
+      "2026-01-11: winded (4/10); rescue inhaler",
+      "2026-01-09: cough; phlegm; Spiriva 18 micrograms; Advair; rescue inhaler; blood pressure pill"
+    ],
+    "questions_for_clinician": [
+      "Is this cough and shortness of breath ever going to stop?",
+      "Why did I get so sick all of a sudden, even though I take my meds?",
+      "Will I be able to do normal things again, like help my friends or go for walks without getting completely winded?",
+      "What if I need the hospital again? Is this just going to keep happening?",
+      "Is there anything else I can do besides rehab and these inhalers to feel better?"
+    ],
+    "system_longitudinal_flags": [
+      "Patient exhibits an acute decompensation of baseline COPD symptoms between 2026-01-22 and 2026-01-25. Key features include: (1) Marked increase in rescue inhaler utilization from baseline to 4-5 times on 2026-01-22. (2) Escalation of symptom severity scores for chest tightness, dyspnea, and cough to 7/10-8/10. (3) Change in sputum characteristics from yellow to green. (4) Development of fever (101.2F). (5) Objective hypoxemia documented at SpO2 88% on room air on 2026-01-25, requiring emergency department evaluation and hospitalization. (6) Lack of response to usual rescue therapy necessitating nebulizer treatments and systemic corticosteroids in the hospital setting.",
+      "Patient with known COPD presents with a 4-day history of progressive worsening of baseline respiratory symptoms. On 2026-01-21, reported increased rescue inhaler use (4-5 times), chest tightness, and yellow phlegm. Symptoms escalated on 2026-01-22 to include nocturnal cough every 2 hours, severe chest pain/tightness (7/10), dyspnea (7/10), and green sputum production. On 2026-01-23, patient developed fever (101.2\u00b0F) and sweating, with persistent severe chest tightness and dyspnea (8/10). By 2026-01-24, dyspnea occurred with minimal exertion (walking to bathroom), rescue inhaler provided no relief, and pulse oximetry was 88%. This led to an ER visit and hospitalization where the patient received nebulizer treatments, IV steroids, and antibiotics. Oxygen saturation improved to 93% on room air by 2026-01-24 morning.",
+      "Patient reports a 3-day history (2026-01-20 to 2026-01-23) of escalating respiratory symptoms including increased cough frequency, change in sputum characteristics (yellow -> green), increased sputum volume/thickness, worsening chest tightness, and dyspnea. Rescue inhaler use increased from baseline (as needed) to 4-5 times on 2026-01-20. Symptoms worsened overnight on 2026-01-21, causing sleep disturbance. On 2026-01-22, the patient reported fever (101.2\u00b0F) and sweating. By 2026-01-23, dyspnea occurred with minimal exertion (walking to bathroom), rescue inhaler provided no relief, and pulse oximetry was 88%. This represents an acute exacerbation of COPD characterized by increased symptom severity, purulent sputum production, systemic inflammatory signs (fever), and treatment failure requiring escalation of care.",
+      "Over a 4-day period (2026-01-19 to 2026-01-22), the patient experienced an acute exacerbation of underlying COPD. Key features include: 1) Marked increase in rescue inhaler use from baseline (up to 5 times on 2026-01-19). 2) Development of purulent sputum (yellow -> green) associated with increased phlegm production and difficulty clearing it. 3) Emergence of systemic symptoms including fever (101.2F) and diaphoresis. 4) Severe dyspnea at rest/minimal exertion (walking to bathroom), unresponsive to usual rescue therapy. 5) Objective hypoxemia documented in the ER (SpO2 88% on room air). 6) Hospitalization required, with treatment including nebulized bronchodilators and IV corticosteroids, indicating a severe exacerbation necessitating intensive management."
+    ]
+  },
+  "watchdog_results": {
+    "pending_checkins": [],
+    "clinician_observations": [
+      "Patient exhibits an acute decompensation of baseline COPD symptoms between 2026-01-22 and 2026-01-25. Key features include: (1) Marked increase in rescue inhaler utilization from baseline to 4-5 times on 2026-01-22. (2) Escalation of symptom severity scores for chest tightness, dyspnea, and cough to 7/10-8/10. (3) Change in sputum characteristics from yellow to green. (4) Development of fever (101.2F). (5) Objective hypoxemia documented at SpO2 88% on 2026-01-25, requiring emergency department evaluation and hospitalization. (6) Lack of response to usual rescue therapy necessitating nebulizer treatments and systemic corticosteroids in the hospital setting.",
+      "Patient with known COPD presents with a 4-day history of progressive worsening of baseline respiratory symptoms. On 2026-01-21, reported increased rescue inhaler use (4-5 times), chest tightness, and yellow phlegm. Symptoms escalated on 2026-01-22 to include nocturnal coughing every 2 hours, severe chest pain/tightness (7/10), dyspnea (7/10), and green sputum production. On 2026-01-23, patient developed fever (101.2F) and sweating, with persistent severe chest tightness and dyspnea (8/10). By 2026-01-24, dyspnea was refractory to rescue inhaler, associated with hypoxemia (SpO2 88%), necessitating emergency department evaluation and hospitalization. Hospital course included nebulizer treatments and IV steroids. This represents an acute exacerbation of COPD characterized by increased symptom severity, purulent sputum production, systemic inflammatory signs (fever), and treatment failure requiring escalation of care.",
+      "Patient reports a 3-day history (2026-01-20 to 2026-01-23) of escalating respiratory symptoms including increased cough frequency, change in sputum characteristics (yellow -> green), increased sputum volume/thickness, worsening chest tightness, and dyspnea. Rescue inhaler use increased from baseline (as needed) to 4-5 times on 2026-01-20. Symptoms worsened overnight on 2026-01-21, causing sleep disturbance. On 2026-01-22, the patient reported fever (101.2\u00b0F) and sweating. By 2026-01-23, dyspnea occurred with minimal exertion (walking to bathroom), rescue inhaler provided no relief, and pulse oximetry was 88%. This led to an ER visit and hospitalization where the patient received nebulizer treatments, IV steroids, and antibiotics (Z-pack). Oxygen saturation improved to 93% on room air by 2026-01-24 morning.",
+      "Patient experienced a severe COPD exacerbation (2026-01-21) characterized by increased dyspnea, chest tightness, nocturnal cough, and purulent sputum (yellow -> green), requiring emergency department visit, hospitalization for observation, nebulizer treatments, IV steroids, and antibiotics. Objective improvement noted post-treatment (O2 sat 93% RA, reduced phlegm). However, persistent exertional dyspnea and significant fatigue developed post-exacerbation (onset ~2026-01-30), limiting functional capacity (e.g., walking 50 feet causes windedness) despite completion of prescribed therapies and initiation of pulmonary rehabilitation. Oxygen saturation at rest is now consistently >94% on room air, suggesting adequate gas exchange at baseline, but exertional limitation remains prominent.",
+      "Over a 4-day period (2026-01-19 to 2026-01-22), the patient experienced an acute exacerbation of underlying COPD. Key features include: 1) Marked increase in rescue inhaler use from baseline (up to 5 times on 2026-01-19). 2) Development of purulent sputum (yellow -> green) associated with increased phlegm production and difficulty clearing it. 3) Emergence of systemic symptoms including fever (101.2F) and diaphoresis. 4) Severe dyspnea at rest/minimal exertion (walking to bathroom), unresponsive to usual rescue therapy. 5) Objective hypoxemia documented in the ER (SpO2 88% on room air). 6) Hospitalization required, with treatment including nebulized bronchodilators and IV corticosteroids, indicating a severe exacerbation necessitating intensive management.",
+      "Patient reports a 4-day period of worsening respiratory symptoms starting 2026-01-19. Symptoms include increased dyspnea (requiring rescue inhaler use 4-5 times on 2026-01-19, ineffective on 2026-01-22), productive cough with purulent sputum (yellow on 2026-01-19, green on 2026-01-20 and 2026-01-21), chest tightness, and fever (101.2F on 2026-01-21). Objective finding of hypoxemia (SpO2 88%) on 2026-01-22 necessitated emergency department evaluation and treatment with nebulized bronchodilators and intravenous corticosteroids. Hospitalization occurred overnight (2026-01-22 to 2026-01-23). Patient was discharged with prednisone and azithromycin (Z-pack)."
+    ]
+  },
+  "total_logs": 21,
+  "degraded_logs": 0
+}

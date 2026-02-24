@@ -1,0 +1,16 @@
+{
+  "task_name": "diagnosis_simple",
+  "best_model": "Ensemble",
+  "f1_score": 0.6269560275159625,
+  "accuracy": 0.6689478186484175,
+  "classes": [
+    "COVID-19",
+    "healthy",
+    "infection"
+  ],
+  "total_samples": 5841,
+  "sources": {
+    "coughvid": 753,
+    "new_datasets": 5088
+  }
+}

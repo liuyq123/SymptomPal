@@ -1,0 +1,15 @@
+{
+  "task_name": "cough_type_keras",
+  "classifier": "Keras",
+  "accuracy": 0.5873015873015873,
+  "f1_score": 0.6037421426412977,
+  "macro_f1": 0.5701392514835482,
+  "focal_gamma": 1.0,
+  "lr": 0.001,
+  "best_epoch": 7,
+  "epochs_trained": 27,
+  "classes": [
+    "dry",
+    "wet"
+  ]
+}

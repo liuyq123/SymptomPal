@@ -1,0 +1,50 @@
+{
+  "task_name": "lung_sound_3class_us2p0",
+  "best_model": "MLP",
+  "accuracy": 0.7988441461595824,
+  "f1_score": 0.7992601257551984,
+  "ensemble_accuracy": 0.8049962714392245,
+  "ensemble_f1": 0.8047336034272345,
+  "classes": [
+    "crackle",
+    "normal",
+    "wheeze"
+  ],
+  "model_scores": {
+    "LinearSVC": {
+      "accuracy": 0.7768456375838926,
+      "f1_score": 0.7813637702666888,
+      "cv_mean": 0.0
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7427293064876958,
+      "f1_score": 0.7597643560613775,
+      "cv_mean": 0.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.7718120805369127,
+      "f1_score": 0.7758593081666996,
+      "cv_mean": 0.0
+    },
+    "Random Forest": {
+      "accuracy": 0.7820656226696495,
+      "f1_score": 0.777633676471871,
+      "cv_mean": 0.0
+    },
+    "MLP": {
+      "accuracy": 0.7988441461595824,
+      "f1_score": 0.7992601257551984,
+      "cv_mean": 0.0
+    },
+    "SGD (log_loss)": {
+      "accuracy": 0.7721849366144669,
+      "f1_score": 0.7784161318778485,
+      "cv_mean": 0.0
+    },
+    "XGBoost": {
+      "accuracy": 0.7697613721103654,
+      "f1_score": 0.778922549359892,
+      "cv_mean": 0.0
+    }
+  }
+}

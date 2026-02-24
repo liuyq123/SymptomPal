@@ -1,0 +1,44 @@
+{
+  "task_name": "severity_simple",
+  "best_model": "MLP",
+  "accuracy": 0.9245283018867925,
+  "f1_score": 0.9101812067999253,
+  "ensemble_accuracy": 0.9339622641509434,
+  "ensemble_f1": 0.9020708697653014,
+  "classes": [
+    "mild",
+    "severe"
+  ],
+  "model_scores": {
+    "SVM (linear)": {
+      "accuracy": 0.8679245283018868,
+      "f1_score": 0.8755053908355795,
+      "cv_mean": 0.8596945193171608
+    },
+    "SVM (rbf)": {
+      "accuracy": 0.41509433962264153,
+      "f1_score": 0.5376664816870145,
+      "cv_mean": 0.5472416891284816
+    },
+    "Logistic Regression": {
+      "accuracy": 0.839622641509434,
+      "f1_score": 0.8586474985978978,
+      "cv_mean": 0.8463971248876909
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8867924528301887,
+      "f1_score": 0.8867924528301887,
+      "cv_mean": 0.9109973045822104
+    },
+    "Random Forest": {
+      "accuracy": 0.9339622641509434,
+      "f1_score": 0.9020708697653014,
+      "cv_mean": 0.9356154537286614
+    },
+    "MLP": {
+      "accuracy": 0.9245283018867925,
+      "f1_score": 0.9101812067999253,
+      "cv_mean": 0.9090386343216531
+    }
+  }
+}

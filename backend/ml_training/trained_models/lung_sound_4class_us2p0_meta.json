@@ -1,0 +1,46 @@
+{
+  "task_name": "lung_sound_4class_us2p0",
+  "best_model": "SGD (log_loss)",
+  "accuracy": 0.7705070842654735,
+  "f1_score": 0.7687657954839333,
+  "ensemble_accuracy": 0.7768456375838926,
+  "ensemble_f1": 0.7729197675492129,
+  "classes": [
+    "both",
+    "crackle",
+    "normal",
+    "wheeze"
+  ],
+  "model_scores": {
+    "LinearSVC": {
+      "accuracy": 0.767710663683818,
+      "f1_score": 0.7619880952737483,
+      "cv_mean": 0.0
+    },
+    "Logistic Regression": {
+      "accuracy": 0.6959358687546607,
+      "f1_score": 0.7279250552181074,
+      "cv_mean": 0.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.7554064131245339,
+      "f1_score": 0.7534189715246455,
+      "cv_mean": 0.0
+    },
+    "Random Forest": {
+      "accuracy": 0.7688292319164802,
+      "f1_score": 0.750213893316933,
+      "cv_mean": 0.0
+    },
+    "MLP": {
+      "accuracy": 0.7600671140939598,
+      "f1_score": 0.761611265073271,
+      "cv_mean": 0.0
+    },
+    "SGD (log_loss)": {
+      "accuracy": 0.7705070842654735,
+      "f1_score": 0.7687657954839333,
+      "cv_mean": 0.0
+    }
+  }
+}

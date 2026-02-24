@@ -1,0 +1,13 @@
+{
+  "task_name": "diagnosis_simple",
+  "experiment": "Tuned Ensemble (SMOTE + GridSearch)",
+  "best_model": "Ensemble",
+  "accuracy": 0.40397350993377484,
+  "f1_score": 0.3944037080463608,
+  "classes": [
+    "COVID-19",
+    "healthy",
+    "infection"
+  ],
+  "improvements": "SMOTE oversampling + hyperparameter tuning + soft voting ensemble"
+}

@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# Backend data (SQLite database)
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+frontend/dist/
+*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables (may contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# TTS Cache
+demo/tts_cache/
+
+# Piper voice models (large files, auto-download on first use)
+demo/piper_models/
+
+# Google Cloud SDK (vendored)
+google-cloud-sdk/
+
+# ML embedding cache (large binary files)
+embedding_cache/
+
+# ML model weights (if downloaded locally)
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.h5
+
+# ML raw datasets (large audio files)
+backend/ml_data/
+
+# Google Cloud SDK installer tarball
+google-cloud-cli-*.tar.gz
+
+# Pickle files (ML trained models, embedding caches)
+*.pkl
+
+# Test images
+test_images/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Test documentation
+TEST_CASES.md
+
+# Jupyter notebooks
+*.ipynb
+
+# Demo data with embedded TTS audio (large files — use .gz versions)
+frontend/public/demo/*.json
+
+# Video narration / TTS
+video_audio/
+generate_video_tts.py
+narration.txt
+WRITEUP.md
+Writeup_SymptomPal.pdf
+
+# Audio test samples (re-downloadable via download_samples.sh)
+backend/demo_data/audio/

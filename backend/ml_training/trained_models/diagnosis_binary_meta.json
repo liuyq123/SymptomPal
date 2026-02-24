@@ -1,0 +1,15 @@
+{
+  "task_name": "diagnosis_binary",
+  "best_model": "Ensemble",
+  "f1_score": 0.7196222329456502,
+  "accuracy": 0.7442258340461934,
+  "classes": [
+    "COVID-19",
+    "non-COVID"
+  ],
+  "total_samples": 5841,
+  "class_distribution": {
+    "COVID-19": 1672,
+    "non-COVID": 4169
+  }
+}

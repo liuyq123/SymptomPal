@@ -1,0 +1,13 @@
+{
+  "task_name": "cough_type_pytorch",
+  "classifier": "PyTorch",
+  "accuracy": 0.6638655462184874,
+  "f1_score": 0.6569012915271831,
+  "focal_gamma": 1.0,
+  "lr": 0.0005,
+  "epochs": 300,
+  "classes": [
+    "dry",
+    "wet"
+  ]
+}

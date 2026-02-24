@@ -1,0 +1,47 @@
+{
+  "task_name": "diagnosis_1",
+  "best_model": "Gradient Boosting",
+  "accuracy": 0.42207792207792205,
+  "f1_score": 0.418020321818418,
+  "ensemble_accuracy": 0.43506493506493504,
+  "ensemble_f1": 0.4208779942847606,
+  "classes": [
+    "COVID-19",
+    "healthy_cough",
+    "lower_infection",
+    "obstructive_disease",
+    "upper_infection"
+  ],
+  "model_scores": {
+    "SVM (linear)": {
+      "accuracy": 0.38311688311688313,
+      "f1_score": 0.36877262846255093,
+      "cv_mean": 0.3650963415669298
+    },
+    "SVM (rbf)": {
+      "accuracy": 0.22727272727272727,
+      "f1_score": 0.2431860097384846,
+      "cv_mean": 0.2464052287581699
+    },
+    "Logistic Regression": {
+      "accuracy": 0.37012987012987014,
+      "f1_score": 0.3581303348252501,
+      "cv_mean": 0.40162125456243103
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.42207792207792205,
+      "f1_score": 0.418020321818418,
+      "cv_mean": 0.42503183091418384
+    },
+    "Random Forest": {
+      "accuracy": 0.42857142857142855,
+      "f1_score": 0.41137605543995615,
+      "cv_mean": 0.4003904592139887
+    },
+    "MLP": {
+      "accuracy": 0.38311688311688313,
+      "f1_score": 0.36798887886914133,
+      "cv_mean": 0.36896698073168654
+    }
+  }
+}

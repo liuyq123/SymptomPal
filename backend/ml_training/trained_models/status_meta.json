@@ -1,0 +1,45 @@
+{
+  "task_name": "status",
+  "best_model": "Logistic Regression",
+  "accuracy": 0.4666666666666667,
+  "f1_score": 0.4644655197188802,
+  "ensemble_accuracy": 0.4083333333333333,
+  "ensemble_f1": 0.4065300161685704,
+  "classes": [
+    "COVID-19",
+    "healthy",
+    "symptomatic"
+  ],
+  "model_scores": {
+    "SVM (linear)": {
+      "accuracy": 0.39166666666666666,
+      "f1_score": 0.3904120213407998,
+      "cv_mean": 0.31666666666666665
+    },
+    "SVM (rbf)": {
+      "accuracy": 0.325,
+      "f1_score": 0.17899491812535293,
+      "cv_mean": 0.305
+    },
+    "Logistic Regression": {
+      "accuracy": 0.4666666666666667,
+      "f1_score": 0.4644655197188802,
+      "cv_mean": 0.31166666666666665
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.39166666666666666,
+      "f1_score": 0.39046443268665487,
+      "cv_mean": 0.33999999999999997
+    },
+    "Random Forest": {
+      "accuracy": 0.35833333333333334,
+      "f1_score": 0.35384112105856985,
+      "cv_mean": 0.325
+    },
+    "MLP": {
+      "accuracy": 0.375,
+      "f1_score": 0.3738225629791895,
+      "cv_mean": 0.3283333333333333
+    }
+  }
+}
