@@ -90,7 +90,7 @@ TEST_CASES.md
 # Jupyter notebooks
 *.ipynb
 
-# Demo data with embedded TTS audio (large files — use .gz versions)
+# Demo data with embedded TTS audio (large uncompressed files)
 frontend/public/demo/*.json
 
 # Video narration / TTS

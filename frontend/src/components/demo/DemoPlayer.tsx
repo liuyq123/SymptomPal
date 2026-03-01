@@ -812,9 +812,33 @@ export default function DemoPlayer({ scenario, onBack }: DemoPlayerProps) {
   )
 }
 
+// Module-level ref so only one message replays audio at a time
+let activeReplayAudio: { stop: () => void } | null = null
+
 function MessageBubble({ message, patientName, onInspect }: { message: DemoMessage; patientName: string; onInspect?: () => void }) {
   const isPatient = message.speaker === 'patient'
   const firstName = patientName.split(' ')[0]
+  const [isPlaying, setIsPlaying] = useState(false)
+  const replayAudioRef = useRef<HTMLAudioElement | null>(null)
+
+  const handleReplayAudio = useCallback(() => {
+    if (!message.audio) return
+    // Stop any other message's replay first
+    activeReplayAudio?.stop()
+    const audio = new Audio(message.audio)
+    replayAudioRef.current = audio
+    setIsPlaying(true)
+    const cleanup = () => {
+      setIsPlaying(false)
+      replayAudioRef.current = null
+      if (activeReplayAudio?.stop === stop) activeReplayAudio = null
+    }
+    const stop = () => { audio.pause(); cleanup() }
+    activeReplayAudio = { stop }
+    audio.onended = cleanup
+    audio.onerror = cleanup
+    audio.play().catch(cleanup)
+  }, [message.audio])
 
   return (
     <div className={`flex gap-3 ${isPatient ? '' : 'flex-row-reverse'}`}>
@@ -834,9 +858,15 @@ function MessageBubble({ message, patientName, onInspect }: { message: DemoMessa
             }
           </span>
           {message.audio && (
-            <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
-            </svg>
+            <button
+              onClick={handleReplayAudio}
+              className={`transition-colors ${isPlaying ? 'text-blue-500 animate-pulse' : 'text-gray-400 hover:text-blue-500'}`}
+              title="Replay audio"
+            >
+              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+              </svg>
+            </button>
           )}
           {!isPatient && onInspect && (
             <button
